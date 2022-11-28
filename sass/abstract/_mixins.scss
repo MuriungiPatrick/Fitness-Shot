@@ -1,0 +1,67 @@
+@mixin absolutecenter {   
+    transform: translate(-50%, -50%);
+    left: 50% !important;
+    top: 50% !important;
+    position: absolute;
+
+}
+
+@mixin transition($transition) {
+    -moz-transition:    all $transition ease;
+    -o-transition:      all $transition ease;
+    -webkit-transition: all $transition ease;
+    -ms-transition: 		all $transition ease;
+    transition:         all $transition ease;
+} 
+
+@mixin iconcircle {
+    line-height: 1.3;
+    position: relative;
+    margin-top: -3.75rem;
+    width: 5rem;
+    height: 5rem;
+    background: $primary;
+    border-radius: 50%;
+    display: inline-block;
+    margin-bottom: 1rem;
+    @include transition(.3s);
+
+}
+
+@mixin largetext {
+	font: {
+		size: 6rem;
+		weight: bold;
+	}
+}
+
+// START MEDIA QUERY
+
+/** 
+0     -   600PX   : PHONE
+600 -   900PX   : TABLET PORTRAIT
+900  -   1200PX : TABLET LANDSCAPE
+1200  -   1800PX : Where our normal styles apply
+1800 - +          : DESKTOP
+
+**/
+
+@mixin respond($breakpoint) {
+    
+    @if $breakpoint == phone-small {
+        @media only screen and (max-width: 20em) { @content };   //1em = 16px(so 320/16=20em)
+    }
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 36em) { @content };   //1em = 16px(so 576/16=36em)
+    }
+    @if $breakpoint == tab-portrait {
+        @media only screen and (max-width: 48em) { @content };  //1em = 16px(so 900/16=48em)
+    }
+    @if $breakpoint == tab-landscape {
+        @media only screen and (max-width: 62em) { @content };  //1em = 16px(so 1200/16=62em)
+    }
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };  //1em = 16px(so 1800/16=112.5em)
+    }
+    
+}

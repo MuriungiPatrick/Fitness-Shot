@@ -1,0 +1,176 @@
+.footer {
+  // padding-top: 0.5rem;
+  background-color: $color-dark-3;
+  color: $color-white; 
+
+  i {
+    font-size: 1rem;
+  }
+  
+
+  // START CONTACT BOX WITH ICONS STYLES
+.contact-box {
+  text-decoration: none;
+  
+  
+  &__contact-info {
+      padding: 0.4rem;
+
+      &--title {
+          // text-align: center;
+          font-family: 'Oxygen', sans-serif; 
+          font-weight: 500;
+          
+      }
+
+       a {
+          font-size: 1.4rem;
+          color: $color-white;
+          text-decoration: none;
+
+          &:hover {
+              color: $primary;
+              text-decoration: none;
+        
+            }
+            
+        }
+        
+      &--sub-title {
+          font-size: 1.2rem;
+          color: $color-grey;
+          text-transform: capitalize;
+          font-weight: 600;
+      }
+
+  }
+
+  &--contact-icons {
+      width: 4rem;
+      padding-top: 0.3rem;
+    }   
+
+  
+}
+
+.footer-center {
+  padding: 1rem;
+
+
+   a {
+      color: $color-white;
+      text-decoration: none;
+      
+    &:hover {
+      color: $primary;
+    }
+
+    
+  }
+
+
+}
+
+.footer-sm {
+
+  a {
+    color: $primary;
+
+     i {
+        font-size: 1.8rem;
+        padding-left: 1rem;
+
+        &:hover {
+          color: $secondary;
+        }
+
+      }
+
+  } 
+  
+}
+
+
+     
+}
+
+.f-list {
+      display: block;
+      list-style-type: none;
+      position: relative;
+
+        & > li {       
+          color: $color-white;
+          margin-bottom: 0.5rem;
+                           
+
+        a {
+          color: $color-ccc;
+          transition: all .3s ease;  
+
+          &:hover {
+            padding-bottom: 4rem;
+            color: $primary;
+            transform: skewY(10deg) skewX(5deg) scale(1.1);
+            transition:all .3s;
+            
+        }
+
+      }     
+                      
+  }            
+
+} 
+
+
+/// START BOTTOM FOOTER SECTION 
+  .footer-bottom {
+    background-color: $color-dark;
+    // padding: 3rem 0;
+
+    &__copyright {
+      font-size: 1rem;
+      color: $color-grey;
+      
+       a {
+        color: $color-ccc;
+        transition: all .3s ease;  
+        text-decoration: none;
+
+        &:hover {
+          color: $primary;
+          text-decoration: underline;
+          
+        }
+
+      }  
+
+    }
+
+  }
+
+// SVG STYLES ON THE FOOTER
+
+.phone {
+stroke: $primary;
+stroke-dasharray: 141;
+stroke-dashoffset: 141;
+animation: line-Animate 3s ease forwards;
+
+}
+
+.email {
+stroke: $primary;
+stroke-dasharray: 141;
+stroke-dashoffset: 141;
+animation: line-Animate 3s ease forwards;
+
+}
+
+.location {
+stroke: $primary;
+stroke-dasharray: 205;
+stroke-dashoffset: 205;
+animation: line-Animate 3s ease forwards;
+
+}

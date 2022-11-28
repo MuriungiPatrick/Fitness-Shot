@@ -1,0 +1,11 @@
+@use '../custom' as *;
+@use '../components/mixin' as *;
+
+
+
+.breadcrumb {
+
+    a {
+        color: $gray-500;
+    }
+}

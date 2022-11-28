@@ -1,0 +1,72 @@
+/**
+--------------------------------------------------------------------
+           WEBSITE MAIN COLORS 
+------------------------------------------------------------------------
+**/
+// $primary:#2945df;
+// $secondary:#fd09a0;
+
+$primary:#8d17ee;
+$secondary:#09a4fd;
+$success: #2bc550;
+$info: #495dff;
+$warning: #fff043;
+$danger: #ff293a;
+$light: #dfe6ee;
+$dark: #0f19;
+
+
+$bs-primary: $primary;
+$bs-secondary: $secondary;
+
+// $border-radius: 150rem;
+
+// Enabling shadows and gradients
+$enable-shadows: true;
+$enable-gradients: true;
+
+$white:    #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black:    #000 !default; 
+
+// THEME COLORS
+$color-green:#28a745;
+$color-red:#ff0000;
+$color-white: $white;
+$color-dark:#000;
+$color-grey: $gray-600;
+$color-eee: #eee;
+$color-ccc: #cccccc;
+$color-ddd: #dddddd;
+
+$color-dark-1:#1B1B1B;
+$color-dark-2:#121111;
+$color-dark-3:#151414;
+$color-dark-4: #212121;
+
+
+// RESPONSIVE
+$enable-responsive-font-sizes:  true;
+
+
+$font-primary:     'Oxygen', sans-serif; 
+
+
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark
+);

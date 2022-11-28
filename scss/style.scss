@@ -1,0 +1,23 @@
+@use './custom' as *;
+
+/* COMPONENTS */
+
+@use './components/animations';
+@use './components/utilities';
+
+/* GLOBAL */
+@use './global-sections/dark-mode';
+@use './global-sections/navbar';
+@use './global-sections/footer';
+
+/*SECTIONS */
+@use './homepage-sections/hero-section';
+@use './homepage-sections/intro-section';
+@use './homepage-sections/downloads';
+@use './homepage-sections/projects';
+@use './homepage-sections/youtube-channel';
+@use './homepage-sections/reviews';
+@use './homepage-sections/article';
+@use './post-sections/post';
+@use './post-sections/blog';
+

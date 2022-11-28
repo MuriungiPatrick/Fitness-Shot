@@ -1,0 +1,81 @@
+@use '../custom' as *;
+@use '../components/mixin' as *;
+
+
+.youtube-channel {
+    position: relative;
+    background: linear-gradient(180deg, 
+    rgba($red, .7) 0%, 
+    rgba($red, .7) 50%, 
+    transparent 50%) , url(/public/images/youtube-1.jpg);
+    background-size: cover;
+    background-position: center center;
+    padding: 5rem 1rem;
+
+
+    @media (min-width: 768px) {
+        position: relative;
+        background: linear-gradient(90deg, 
+        rgba($red, .7) 0%, 
+        rgba($red, .7) 50%, 
+        transparent 50%) , url(/public/images/youtube-1.jpg);
+        background-size: cover;
+        background-position: center center;
+        
+    }
+   
+
+    .content {
+        padding-bottom: 2rem;
+        align-items: center;
+    }
+
+    .video-box {
+        position: relative;
+        color: $primary;
+
+        img {
+           width: 100%;
+        //    justify-content: center;
+        }
+
+        .video-button {
+           color: $white; 
+         
+            
+            svg {               
+                width: 6rem;
+                height: 6rem;
+                color: $gray-400;
+    
+            }
+
+        }
+
+        .border-animation { 
+            width: 100%; 
+            height: 100%; 
+            position: absolute; 
+            top: 0; 
+            left: 0; 
+            border-width: 0.41rem; 
+            border-style: solid; 
+            border-radius: 100%; 
+            border-color: $white;
+            animation: pulse-button 3s linear 0s infinite; 
+            animation-play-state: running; 
+            opacity: 0; 
+            z-index: 9; 
+        }
+        
+        .border-2 { 
+            animation-delay: 1s; 
+        }
+        
+    }
+}
+
+
+
+
+

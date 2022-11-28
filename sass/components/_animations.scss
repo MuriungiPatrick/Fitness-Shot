@@ -1,0 +1,156 @@
+/**	   ANIMATIONS STYLES [Keyframes etc  ]  **/
+
+
+/**	
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+				  START PULSE-BORDER
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+**/ 
+
+@keyframes pulse-border {
+	0% {		
+		transform:scale(1);
+		opacity:0;
+		}
+	20% {		
+		transform:scale(1.2);
+		opacity:1;
+		}
+	100% {
+		transform:scale(1.6);
+		opacity:0;
+		}
+
+    }
+
+
+/**
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+						TO RIGHT FROM :left
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+**/
+@-webkit-keyframes toRightFromLeft {
+		49% {
+		-webkit-transform: translate(100%);
+		}
+		50% {
+		opacity: 0;
+		-webkit-transform: translate(-100%);
+		}
+		51% {
+		opacity: 1;
+		}
+
+	}
+
+
+	@-moz-keyframes toRightFromLeft {
+		49% {
+		-moz-transform: translate(100%);
+		}
+		50% {
+		opacity: 0;
+		-moz-transform: translate(-100%);
+		}
+		51% {
+		opacity: 1;
+		}
+
+	}
+	@keyframes toRightFromLeft {
+		49% {
+		transform: translate(100%);
+		}
+		50% {
+		opacity: 0;
+		transform: translate(-100%);
+		}
+		51% {
+		opacity: 1;
+		}
+
+	}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.fadein {
+	animation-name: fadeIn;
+	animation-duration: 5s;
+}
+
+
+/**	
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+                                        MOVE IN LEFT                 
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+**/
+
+@keyframes moveInLeft {
+	0% {
+		opacity: 0%;
+		transform: translateX(-10rem);
+	}
+
+	80% {
+		transform: translateX(5px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translate(0);
+	}
+
+}
+
+.moveinleft {
+	animation-name: moveInLeft;
+	animation-duration: 2s;
+}
+
+@keyframes moveInRight {
+	0% {
+		opacity: 0%;
+		transform: translateX(10rem);
+	}
+	80% {
+		transform: translateX(-1rem);
+
+	}
+	100% {
+		opacity: 1;
+		transform: translate(0)
+	}
+
+}
+
+@keyframes line-Animate {
+	to {
+		stroke-dashoffset: 0;
+	}
+
+}
+
+  
+  
+// HOME PAGE DEV 
+
+
+@keyframes head {
+	0% {	
+		transform: rotateX(0deg);
+	
+	}
+
+	100% {
+		transform: rotateX(5deg);
+		transition: all 1s ease;
+	}
+
+}

@@ -1,0 +1,40 @@
+// html,
+// body {
+//     font-size: 100%;
+//     font-family: 'Oxygen', sans-serif; 
+         
+
+// }
+
+@import "base/table-of-content";
+@import "abstract/custom";
+@import "abstract/mixins";
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+// @import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+
+@import "layouts/menu";
+@import "layouts/home";
+@import "layouts/showcase";
+@import "layouts/aboutus";
+@import "layouts/skills";
+@import "layouts/sections";
+@import "layouts/work";
+@import "layouts/testimonials";
+@import "layouts/services";
+@import "layouts/footer";
+
+@import "components/buttons";
+@import "components/pricing";
+@import "components/animations";
+
+
+@import "scss/fontawesome";
+@import "scss/regular";
+@import "scss/solid";
+@import "scss/brands";
+

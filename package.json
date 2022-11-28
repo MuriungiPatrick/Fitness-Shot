@@ -1,0 +1,27 @@
+{
+  "name": "codewithpatrick.vercel.app",
+  "version": "1.0.0",
+  "description": "Official portfolio website for Patrick Muriungi",
+  "main": "index.js",
+  "scripts": {
+    "compile": "sass --watch scss:public/css"
+  },
+  "keywords": [
+    "Patrick-muriungi",
+    "muriungi",
+    "codewithpatrick",
+    "code",
+    "kenya"
+  ],
+  "author": "Patrick Muriungi",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.2.2",
+    "bootstrap-icons": "^1.10.1",
+    "html-include-element": "^0.3.0"
+  },
+  "devDependencies": {
+    "@phtml/include": "^4.2.0",
+    "sass": "^1.56.1"
+  }
+}

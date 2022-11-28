@@ -1,0 +1,195 @@
+@use '../custom' as *;
+@use '../components/mixin' as *;
+
+.section-with-intro-content {
+    background-color: $primary;
+    height: 100%;
+    position: relative;
+    padding-bottom: 11rem;
+    // margin-bottom: -5rem;
+
+    .coffee {
+        margin-bottom: 3rem;
+    }
+    
+
+    .content {
+        padding: 1rem;
+        text-align: center;
+        margin-bottom: 1rem;
+
+        :is(h1, h2, h3, h4, h5, h6) {
+            padding: 1.5rem 0;
+            text-transform: capitalize;
+            font-family: 'poppins', sans-serif;
+        }
+
+        a {
+            text-decoration: none;
+            border-bottom: 2px solid lighten($white, 10%);
+            color: $white;
+            
+            &:hover {
+                color: $secondary;
+                border-bottom: 2px solid $secondary;
+            }
+        }
+
+        
+        p {
+            line-height: 1.5;
+            color: $white;
+            padding-bottom: 1rem;
+        }
+
+    }  
+
+}
+
+.section-ntop {
+    position: relative;
+    height: 100%;
+    margin-top: -8rem;
+    margin-bottom: 2rem;
+
+    @media (min-width: 992px) {
+        margin-top: -10rem;
+        height: 100%;
+    }
+
+    :is(h2, h3) {
+        color: $primary;
+    }
+
+    .services-list {
+        position: relative;
+        list-style-type: none;
+        display: block;
+        padding-top: 0.5rem;
+        padding-left: 0.5rem;
+        margin-bottom: 1rem;
+
+        li {
+            margin-bottom: 0.6rem;
+            @include box-shadow;
+            @include border-radius;
+            margin-right: 0.5rem;
+            
+
+            i {
+                padding-left: 0.5rem;
+            }
+
+            span {
+                color: $secondary;
+                font-weight: 600;
+                align-items: flex-end;
+            }
+        }
+
+
+    }
+
+    .skills {
+        height: 44rem;
+    }
+    
+    .card {
+        margin-bottom: 1.5rem;
+       
+
+        a {
+            text-decoration: none;
+            color: $secondary;
+
+            &:hover {
+                text-decoration: underline;
+                color: $primary;
+            }
+        }
+    }
+    
+
+    .header {
+        padding: 1rem 0;
+        // margin-bottom: 1rem;
+
+        i {
+            font-size: 2.5rem;
+            color: $primary;
+
+            @media (min-width: 992px) {
+                 font-size: 4rem;
+                
+            }
+        }
+    }
+
+    .card-body {
+        // text-align: center;
+
+        a {
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+                color: $secondary;
+            }
+        }
+    }
+
+    .courses {
+        text-align: center;     
+        
+
+        img {
+            width: 100%;
+            object-fit: cover;
+            height: 13rem;
+        }
+
+        &:hover {
+            transform: scale(1.1);
+            transition: all 0.4s ease;
+            
+        }
+        
+    }
+}
+
+
+.iconbox {
+    position: relative;
+    background-color: $white;
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0.5rem;
+    display: inline-block;
+    margin: 0.2rem;
+    // flex-grow: 1;
+    // @include shadow;
+
+    
+    @media (min-width: 768px) {
+        display: inline-block;
+        // flex-grow: 1;
+        width: 3.5rem;
+        height: 3.5rem;
+        padding: 1rem;
+        margin: 0.5rem;
+        
+    } 
+    
+
+    svg {
+        @include absoluteCenter;
+      
+        .st0 { 
+            fill:#2e001e
+        }
+        .st1{
+            fill:#ff2bc2
+        }
+    
+    }
+}

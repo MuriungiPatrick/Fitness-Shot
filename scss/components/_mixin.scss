@@ -1,0 +1,49 @@
+@use '../custom' as *;
+
+@mixin paddingTop {
+    padding-top: 5rem;
+}
+// BORDER ROUND
+@mixin borderRound {
+    border: 1px solid $gray-300;
+}
+// BORDER ROUND
+@mixin borderDark {
+    border: 1px solid $gray-800;
+}
+@mixin borderBottom {
+    border-bottom: 1.3px solid $gray-200;
+    
+}
+@mixin borderBottomDark {
+    border-bottom: 1.3px solid $gray-700;
+    
+}
+// ABSOLUTE CENTER 
+@mixin absoluteCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+// ABSOLUTE LEFT 
+@mixin topLeft {
+    position: absolute;
+    top: 45%;
+    left: 17%;
+    transform: translate(-50%, -50%);
+}
+
+// ROUNDED CIRCLE  
+@mixin roundedCircle {
+    border-radius: 50%;
+}
+// TRANSITION PROPERTY 
+@mixin transitionProperty {
+    transition-duration: 1s;
+    transition-property: all;
+}
+
+
+/* DARK MODE / LIGHT MODE */
+

@@ -1,0 +1,214 @@
+@use '../custom' as *;
+@use '../components/mixin' as *;
+
+.dark-mode { 
+    background-color: $gray-900;
+    color: $white;    
+    
+
+    .card {
+        background-color: $gray-800;
+        color: $white;
+
+        .card-body {
+
+            a {
+                color: $white;
+            }
+        }
+        
+    }
+
+    
+
+
+    .section-ntop {
+        background-color: $gray-900;
+        color: $white;
+        
+        
+        .iconbox {
+            background-color: $gray-400;
+        }
+
+        .card {
+
+            span {
+                color: $white;
+            }
+
+            a {
+                color: $white;
+            }
+        }
+
+        
+        
+    }
+
+    .hero-section {
+        background-color: $gray-900;
+        color: $white;
+    }
+
+    .section-with-intro-content {
+        background-color: $gray-900;
+        color: $white;
+
+        :is(h1, h2, h3) {
+            color: $white;
+        }
+
+      
+    }
+
+    .youtube-channel {
+        position: relative;
+        background: linear-gradient(180deg, 
+        rgba($gray-800, .9) 0%, 
+        rgba($gray-800, .9) 50%, 
+        transparent 50%) , url(/public/images/youtube-1.jpg);
+        background-size: cover;
+        background-position: center center;
+        padding: 5rem 1rem;
+    
+    
+        @media (min-width: 768px) {
+            position: relative;
+            background: linear-gradient(90deg, 
+            rgba($gray-800, .9) 0%, 
+            rgba($gray-800, .9) 50%, 
+            transparent 50%) , url(/public/images/youtube-1.jpg);
+            background-size: cover;
+            background-position: center center;
+            
+        }
+
+    }
+    .project-section {
+        background-color: $gray-900;
+        color: $white;
+
+    }
+    .modal .modal-content {
+        background-color: $gray-800;
+    }
+    .testimonials {
+        background-color: $gray-900;
+        color: $white;
+    }
+    
+
+    
+    .footer {
+        background-color: $gray-900;
+        color: $white;
+
+        .cta {
+            background-color: $gray-800;
+        }
+    }
+
+    .navbar {
+        background-color: $gray-900;
+
+        .navbar-brand a {
+            color: rgba($white,  .9)
+
+            img {
+                color: rgba($white,  .2)
+            }
+        }
+
+        a {
+            color: $white;
+
+        }
+        
+
+        i {
+            color: $white;
+        }
+
+        .offcanvas {
+            background-color: $gray-900;
+
+        }
+        .btn-close{
+            background-color: $white;
+        }
+
+        
+        .navbar-toggler {
+            background-color: $primary;
+            color: rgba($white,  .9);          
+           
+        }
+        
+       
+    }
+
+    .blog-item {
+        color: $white;
+
+        
+
+        a {
+            color: $white;
+            text-decoration: none;
+    
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .back-to-top {
+        background-color: $gray-900;
+    
+        i {
+            color: $white;
+            @include absoluteCenter;
+        }
+       
+    }
+
+    .post-content {
+        background-color: $gray-900;
+    }
+
+
+
+    .post-ntop {
+        background-color: $gray-900;
+    
+
+        .post {
+            background-color: $gray-800;
+            color: $white;
+            @include box-shadow;
+            @include borderDark;
+
+            .post-meta {
+
+                :is(h2, h3, h4) {
+                    @include borderBottomDark;
+                }
+                
+                li {
+                    @include borderBottomDark;
+                }
+            }
+
+            .content {
+
+                :is(h4, h5, h6) {                  
+                    @include borderBottomDark;
+                  
+                }
+            }
+        }
+    }
+}
+
+

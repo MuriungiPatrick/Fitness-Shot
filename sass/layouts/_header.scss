@@ -1,0 +1,66 @@
+/*-----------------------------------------------------------------------------
+                  THE HOME PAGE SECTION [Including Nav and Menu section ]               
+-----------------------------------------------------------------------------------
+**/
+
+/**------------------------------------------------------------------------
+                                NAVBAR STYLES 
+--------------------------------------------------------------------------**/ 
+
+.navbar {
+  position: sticky;
+  
+  &__navbar-brand {  
+      height: auto;
+      filter: brightness(50); 
+
+      &:hover {
+          animation-duration: 4s;
+          filter: grayscale(120);
+          
+    }
+
+  }
+
+  
+  &__nav-item{
+      text-transform: capitalize;
+      text-decoration: none;
+      padding: 0 .5rem;
+      transition: .5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+      
+       a {
+          color: $color-white;
+          text-decoration: none;
+          transition:all .3s;
+          font-size: 1rem;
+          line-height: 1.2rem;
+          text-transform: uppercase;
+          animation: moveInBottom .5s ease-out .5s;
+          animation-fill-mode: backwards;
+          font-family: 'Oxygen', sans-serif; 
+          font-weight: 400;
+
+          &:hover {
+              // background-color: $primary;
+              color: $color-white;
+              transform: translateX(1px);
+              transition:all .3s;
+              
+             
+        }
+
+    }
+                             
+}
+      
+      &:link,
+      &:visited,
+      &:active  {
+          color: $primary;
+          text-decoration: none;
+          transition:all .3s;           
+
+    }
+
+}

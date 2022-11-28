@@ -1,0 +1,50 @@
+.header-breadcrumbs {
+	height: 40vh;
+	background-image: linear-gradient(to right bottom, rgba($primary, 0.6), rgba($secondary, 0.8 )), url('/images/header-nav-bg.jpg');
+	-webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+
+    @media only screen and (max-width: 800px) and (min-width: 400px) {
+        height: 100vh;
+        
+    }
+    
+    
+    &__breadcrumbs-info {
+        // text-align: center;
+        margin-top: 5rem;
+        padding: 1rem;
+        // background-color: rgba($color-white, .1);
+
+
+        .breadcrumbs {    
+           padding: 2rem 0;
+           color: $color-white;
+
+           &__pagination {
+            float: right;
+            width: 50%;
+            font-size: 1.4rem;
+            text-align: right;
+            // font-weight: bold;
+            color: $primary;
+            margin: 1rem 0 0;
+
+            & > a {
+                color: $color-ccc;
+            }
+
+            & > i {
+                color: $color-white;
+                padding: 0 0.5rem;
+             }
+
+        }
+          
+      }
+
+    }
+    
+}
