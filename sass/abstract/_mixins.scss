@@ -1,3 +1,6 @@
+@use '../custom' as *;
+// @use '../abstract/mixins' as *;
+
 @mixin absolutecenter {   
     transform: translate(-50%, -50%);
     left: 50% !important;
@@ -45,23 +48,4 @@
 1800 - +          : DESKTOP
 
 **/
-
-@mixin respond($breakpoint) {
     
-    @if $breakpoint == phone-small {
-        @media only screen and (max-width: 20em) { @content };   //1em = 16px(so 320/16=20em)
-    }
-    @if $breakpoint == phone {
-        @media only screen and (max-width: 36em) { @content };   //1em = 16px(so 576/16=36em)
-    }
-    @if $breakpoint == tab-portrait {
-        @media only screen and (max-width: 48em) { @content };  //1em = 16px(so 900/16=48em)
-    }
-    @if $breakpoint == tab-landscape {
-        @media only screen and (max-width: 62em) { @content };  //1em = 16px(so 1200/16=62em)
-    }
-    @if $breakpoint == big-desktop {
-        @media only screen and (min-width: 112.5em) { @content };  //1em = 16px(so 1800/16=112.5em)
-    }
-    
-}

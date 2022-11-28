@@ -1,3 +1,6 @@
+@use '../custom' as *;
+@use '../abstract/mixins' as *;
+
 /**--------------------------------------------------------
                  VIDEO SECTION STYLES
 --------------------------------------------------------------
@@ -5,7 +8,7 @@
 
 .services-showcase {
 	padding: 7.5rem 0;
-	background: $color-white;
+	background: $white;
 }
 
 .showcase-wrapper {
@@ -39,6 +42,6 @@
         padding-left: 0.8rem;
 }
 .services {
-    background-color: $color-ccc;
+    background-color: $gray-700;
     padding: 8rem 0;
 }

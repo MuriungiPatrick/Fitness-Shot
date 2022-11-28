@@ -1,3 +1,6 @@
+@use '../custom' as *;
+@use '../abstract/mixins' as *;
+
 /**--------------------------------------------------------------------
                           Home Styles
 ----------------------------------------------------------------------
@@ -54,7 +57,7 @@
 **/
 
 .services {
-	@include transition(.3s);
+	// @include transition(.3s);
 	width: 100%;
 	padding: 1rem;
     margin-bottom: 3.75rem;
@@ -62,7 +65,7 @@
     
 	.icon {
         @include iconcircle;
-        @include transition(.3s);
+        // @include transition(.3s);
         
 		span {
 			font-size: 2rem;
@@ -98,7 +101,7 @@
         }
         
 		.service-body {
-			color: $color-ddd;
+			color: $gray-700;
         }
         
     }
@@ -111,7 +114,7 @@
 
 
 .border-right {
-    border-right: 0.1rem solid $color-ddd;
+    border-right: 0.1rem solid $gray-700;
     height: 100%;
 }
 

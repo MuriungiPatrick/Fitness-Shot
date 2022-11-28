@@ -1,7 +1,10 @@
+@use '../custom' as *;
+@use '../abstract/mixins' as *;
+
 .footer {
   // padding-top: 0.5rem;
-  background-color: $color-dark-3;
-  color: $color-white; 
+  background-color: $dark;
+  color: $white; 
 
   i {
     font-size: 1rem;
@@ -25,7 +28,7 @@
 
        a {
           font-size: 1.4rem;
-          color: $color-white;
+          color: $white;
           text-decoration: none;
 
           &:hover {
@@ -38,7 +41,7 @@
         
       &--sub-title {
           font-size: 1.2rem;
-          color: $color-grey;
+          color: $gray-700;
           text-transform: capitalize;
           font-weight: 600;
       }
@@ -58,7 +61,7 @@
 
 
    a {
-      color: $color-white;
+      color: $white;
       text-decoration: none;
       
     &:hover {
@@ -100,12 +103,12 @@
       position: relative;
 
         & > li {       
-          color: $color-white;
+          color: $white;
           margin-bottom: 0.5rem;
                            
 
         a {
-          color: $color-ccc;
+          color: $gray-700;
           transition: all .3s ease;  
 
           &:hover {
@@ -125,15 +128,15 @@
 
 /// START BOTTOM FOOTER SECTION 
   .footer-bottom {
-    background-color: $color-dark;
+    background-color: $dark;
     // padding: 3rem 0;
 
     &__copyright {
       font-size: 1rem;
-      color: $color-grey;
+      color: $gray-700;
       
        a {
-        color: $color-ccc;
+        color: $gray-800;
         transition: all .3s ease;  
         text-decoration: none;
 

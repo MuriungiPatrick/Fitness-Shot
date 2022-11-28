@@ -1,0 +1,18 @@
+/* Error: This module and the new module both define a variable named "$primary".
+ *   ,
+ * 1 | @use '../custom' as *;
+ *   | ^^^^^^^^^^^^^^^^^^^^^
+ *   '
+ *   sass\abstract\_mixins.scss 1:1  @import
+ *   sass\section.scss 4:9           root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: This module and the new module both define a variable named \"$primary\".\a   \2577 \a 1 \2502  @use '../custom' as *;\d\a   \2502  ^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   sass\\abstract\\_mixins.scss 1:1  @import\a   sass\\section.scss 4:9           root stylesheet";
+}

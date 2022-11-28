@@ -1,12 +1,6 @@
-html,
-body {
-    font-size: 100%;
-    font-family: 'Oxygen', sans-serif; 
-         
 
-}
 
-@import "abstract/custom-variables";
+@import "./custom";
 @import "abstract/mixins";
 
 @import "base/typography";

@@ -1,3 +1,6 @@
+@use '../custom' as *;
+@use '../abstract/mixins' as *;
+
 .header {
 	width: 100%;
 	height: 100%;
@@ -8,16 +11,16 @@
 }
 
 .navbar-brand {
-    color: $color-white;
+    color: $white;
 }
 .menu {
-    color: $color-white;
+    color: $white;
     background: linear-gradient(to right, rgba($primary, 0.8), rgba($secondary, 0.8));
   
 
         li {          
             padding: 0 0.6rem;
-            color: $color-white;          
+            color: $white;          
 
             a {
                 text-decoration: none;
@@ -28,7 +31,7 @@
                 animation: moveInBottom .5s ease-out .5s;
                 font-family: 'Oxygen', sans-serif; 
                 font-weight: 600;
-                color: $color-white;
+                color: $white;
 
                 &:hover {
                     color: $secondary;
@@ -49,7 +52,7 @@
     margin: 0;
     padding: 1rem 4rem;
     // position: relative;
-    border: 0.1rem solid $color-ddd;
+    border: 0.1rem solid $gray-700;
     // border-bottom: 0.1rem solid $primary;
     position: sticky;
 

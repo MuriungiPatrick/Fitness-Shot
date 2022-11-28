@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Home Landing Page -  Bootstrap 4.5</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="public/css/style.css">
+    <link rel="stylesheet" href="public/css/animate.css">
+    <link rel="stylesheet" href="public/css/bootstrap.css">
+    <link rel="stylesheet" href="public/css/bootstrap-icons.css">
     
 </head>
 <body>
@@ -14,7 +16,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark shadow-sm p-1 text-white menu pt-3">
             <div class="container">               
             <a class="navbar-brand logo-light" href="#home">
-                <img src="images/logo.png" alt="logo">
+                <img src="public/images/logo.png" alt="logo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -29,7 +31,7 @@
                <li class="nav-item"><a class="nav-link" href="#testimonial">get in touch</a></li>        
                 </ul>           
               <button type="button" class="btn btn-ban btn-light d-lg-block">1 728 365 413
-                <span><i class="fas fa-phone-alt" aria-hidden="true"></i></span> 
+                <span><i class="bi bi-phone-alt" aria-hidden="true"></i></span> 
                 </button>         
               </div>  
             </div>
@@ -52,7 +54,7 @@
                   <!-- button -->
                   <a href="#">
                       <button type="button" class="btn btn-ban btn-light">Get a Quote
-                          <span><i class="fas fa-arrow-right "aria-hidden="true"></i>
+                          <span><i class="bi bi-arrow-right "aria-hidden="true"></i>
                           </span> 
                       </button>                          
                   </a> 
@@ -62,17 +64,17 @@
           <div class="col-12 col-lg-6 col-md-6 text-end"><!-- column 2 starts -->                
             <!-- Image -->        
             <div class="video-wrapper"> 
-                  <img class="img-fluid" src="images/video-bg-img.png" alt="video-bg">                 
-                      <!-- <div class="center-text-box"> -->
+                  <img class="img-fluid" src="public/images/video-bg-img.png" alt="video-bg">                 
                       <a class="position-absolute top-50 start-50 translate-middle" 
                       href="#myModal" data-bs-target="#myModal" data-bs-toggle="modal">   
                         <span class="video-button">
-                           <i class="fas fa-play-circle "aria-hidden="true"></i>                       
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"/>
+                          </svg>               
                         </span> 
                          <span class="border-animation border-1"></span>                      
                          <span class="border-animation border-2"></span> 
                         </a> 
-                      <!-- </div>  -->
                   </div>             
                   <!-- video button starts -->                             
                 </div><!-- column 2 ends -->               
@@ -113,13 +115,13 @@
               <div class="mt-5 show active" id="home" role="tabpanel" aria-labelledby="home-tab">
             <div class="row text-muted">
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <i class="showcase-icon fas fa-plane"aria-hidden="true"></i>
+                    <i class="showcase-icon bi bi-plane"aria-hidden="true"></i>
                     <div class="showcase-about">
                         <h3 class="heading heading--topics">Plane cabs</h4> 
                         <p class="lh-lg">Duis mollis tortor ut ultrices laoreet. Praesent in consectetur lacus. Donec aliquam finibus eros sit amet imperdiet. Curabitur laoreet, lorem eget viverra rhoncus, turpis arcu aliquam felis sed interdum nunc.</p>
                         <a href="#">
                             <button type="button" class="btn btn-ban btn-outline-primary">Learn More
-                                <span><i class="fas fa-arrow-right "aria-hidden="true"></i>
+                                <span><i class="bi bi-arrow-right "aria-hidden="true"></i>
                                 </span> 
                             </button>                          
                         </a>                        
@@ -127,7 +129,7 @@
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     <div class="showcase-wrapper">
-                        <img class="img-fluid" src="images/img-travelins.png" alt="logo"> 
+                        <img class="img-fluid" src="public/images/img-travelins.png" alt="logo"> 
                      </div>             
                   </div>
                   ...</div>
@@ -141,18 +143,18 @@
                   <div class="row mb-5 mt-4">
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     <div class="mw-100 showcase-wrapper">
-                        <img class="img-fluid" src="images/img-petins.png"  alt="logo">                     
+                        <img class="img-fluid" src="public/images/img-petins.png"  alt="logo">                     
                      </div>  
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <i class="showcase-icon fas fa-ambulance"aria-hidden="true"></i>
+                    <i class="showcase-icon bi bi-ambulance"aria-hidden="true"></i>
                     <div class="showcase-about">
                         <h4 class="heading heading--topics">Health insuarance</h4>         
                         <p class="lh-lg">Duis mollis tortor ut ultrices laoreet. Praesent in consectetur lacus. Donec aliquam finibus eros sit amet imperdiet. Curabitur laoreet, lorem eget viverra rhoncus, turpis arcu aliquam felis sed interdum nunc.</p>
                         <a href="#">
                             <button href="#" type="button" class="btn btn-ban btn-outline-primary p3">Learn More
                                 <span>
-                                  <i class="fas fa-arrow-right "aria-hidden="true"></i>
+                                  <i class="bi bi-arrow-right "aria-hidden="true"></i>
                                 </span> 
                             </button>                          
                         </a> 
@@ -167,13 +169,13 @@
           <div class="mt-5 mb-5" id="contact" role="tabpanel" aria-labelledby="contact-tab">
             <div class="row mb-0 mt-0">
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <i class="showcase-icon fas fa-cat"aria-hidden="true"></i>
+                    <i class="showcase-icon bi bi-cat"aria-hidden="true"></i>
                     <div class="showcase-about">
                         <h4 class="heading heading--topics">Plane cabs</h4> 
                         <p class="lh-lg">Duis mollis tortor ut ultrices laoreet. Praesent in consectetur lacus. Donec aliquam finibus eros sit amet imperdiet. Curabitur laoreet, lorem eget viverra rhoncus, turpis arcu aliquam felis sed interdum nunc.</p>
                         <a href="#">
                             <button type="button" class="btn btn-ban btn-outline-primary">Learn More
-                                <span><i class="fas fa-arrow-right "aria-hidden="true"></i>
+                                <span><i class="bi bi-arrow-right "aria-hidden="true"></i>
                                 </span> 
                             </button>                          
                            </a>                        
@@ -182,7 +184,7 @@
 
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     <div class="showcase-wrapper">
-                        <img class="img-fluid" src="images/img-travelins.png" alt="logo">                    
+                        <img class="img-fluid" src="public/images/img-travelins.png" alt="logo">                    
                   </div>             
                 </div>
                </div> 
@@ -210,7 +212,7 @@
           <div class="col-md-4 col-lg-4 text-center">
             <div class="pricing bg-white rounded-lg shadow">
               <div class="price-icon justify-content-center shadow-sm">
-                <span><i class="fas fa-rocket" aria-hidden="true"></i></span>
+                <span><i class="bi bi-rocket" aria-hidden="true"></i></span>
               </div>
               <div class="price-body">
                 <h2 class="fw-bold bg-secondary text-white pt-2 pb-2">Basic</h2>
@@ -232,7 +234,7 @@
           <div class="col-md-4 col-lg-4 text-center mt-4 mb-4 rounded shadow">
         <div class="w-100 h-100 bg-white rounded-left rounded-right">               
       <div class="intro mt-3 mb-3 gradient text-white">
-                  <span><i class="fas fa-bullhorn" aria-hidden="true"></i></span>
+                  <span><i class="bi bi-bullhorn" aria-hidden="true"></i></span>
                 </div>
          <h2 class="fw-bold gradient text-white pt-2 pb-2">Standard</h2>
          <p class="h1 mt-5 mb-5"><strong>$99</strong> <span class="h4">/month</span></p>
@@ -250,7 +252,7 @@
           <div class="col-md-4 col-lg-4 text-center mt-4 shadow">
             <div class="w-100 h-100 bg-white rounded-right">
                   <div class="intro mt-3 mb-3 text-white">
-                  <span><i class="fas fa-trophy" aria-hidden="true"></i></span>
+                  <span><i class="bi bi-trophy" aria-hidden="true"></i></span>
                 </div>
                   <h2 class="font-weight-bold bg-secondary text-white pt-2 pb-2">Ultimate</h2>
                   <p class="h1 mt-4 mb-1"><strong>$199</strong> <span class="h4">/month</span></p>
@@ -346,7 +348,7 @@
                     <div class="row align-items-center">                    
                     <div class="col-md-2 pt-3">
                        <div class="client__client-img">
-                        <img src="images/clients/profile-1.jpg" class="rounded-circle img-fluid">
+                        <img src="public/images/clients/profile-1.jpg" class="rounded-circle img-fluid">
                        </div>
                         </div>                    
                         <div class="col-md-10">
@@ -369,7 +371,7 @@
                     <div class="row">
                     <div class="col-md-2 pt-3">
                       <div class="client__client-img">
-                        <img src="images/clients/profile-2.png" class="rounded-circle img-fluid">
+                        <img src="public/images/clients/profile-2.png" class="rounded-circle img-fluid">
                          </div>                       
                         </div>
                         <div class="col-md-10">
@@ -392,7 +394,7 @@
                     <div class="row">
                     <div class="col-md-2 p-3">
                       <div class="client__client-img">
-                        <img src="images/clients/profile-5.png" class="rounded-circle img-fluid">
+                        <img src="public/images/clients/profile-5.png" class="rounded-circle img-fluid">
                           </div>
                         </div>
                         <div class="col-md-10">
@@ -408,9 +410,9 @@
               </div>
             </div>
             <div class="controls push-right">
-                <a class="left fa fa-chevron-left btn btn-outline-light" href="#carouselExampleCaptions"
+                <a class="left bi bi-chevron-left btn btn-outline-light" href="#carouselExampleCaptions"
                   data-bs-slide="prev"></a>
-                <a class="right fa fa-chevron-right btn btn-outline-light" href="#carouselExampleCaptions"
+                <a class="right bi bi-chevron-right btn btn-outline-light" href="#carouselExampleCaptions"
                   data-bs-slide="next"></a>
               </div>
         </div>
@@ -512,10 +514,10 @@ START THE 1ST COLUMN  COL-MD-7
 ======================================-->
       <!-- <div class="col-md-4">
         <div class="faq-image">
-          <img src="/images/img-healthins.png" alt="how it works" class="img-fluid">
+          <img src="/public/images/img-healthins.png" alt="how it works" class="img-fluid">
           <a class="position-absolute top-50 start-50 translate-middle">   
             <span class="video-button">
-               <i class="fas fa-play-question "aria-hidden="true"></i>                       
+               <i class="bi bi-play-question "aria-hidden="true"></i>                       
             </span> 
              <span class="border-animation border-1"></span>                      
              <span class="border-animation border-2"></span> 
@@ -541,7 +543,7 @@ START THE 1ST COLUMN  COL-MD-7
           <div class="col-md-6 col-lg-3">
              <div class="project-item">
                   <a href="#">
-                    <img src="images/work/work-1.jpg" alt="our work">
+                    <img src="public/images/work/work-1.jpg" alt="our work">
                     <div class="project-overlay">
                       <div class="text-center caption">
                         <h5 class="fw-bold">Website project</h5>
@@ -554,7 +556,7 @@ START THE 1ST COLUMN  COL-MD-7
           <div class="col-md-6 col-lg-3">
              <div class="project-item">
                   <a href="#">
-                    <img src="images/work/work-2.jpg" alt="our work">
+                    <img src="public/images/work/work-2.jpg" alt="our work">
                     <div class="project-overlay">
                       <div class="text-center caption">
                         <h5 class="fw-bold">Website project</h5>
@@ -567,7 +569,7 @@ START THE 1ST COLUMN  COL-MD-7
           <div class="col-md-6 col-lg-3">
              <div class="project-item">
                   <a href="#">
-                    <img src="images/work/work-3.jpg" alt="our work">
+                    <img src="public/images/work/work-3.jpg" alt="our work">
                     <div class="project-overlay"> 
                       <div class="text-center caption">
                         <h5 class="fw-bold">Website project</h5>
@@ -580,7 +582,7 @@ START THE 1ST COLUMN  COL-MD-7
           <div class="col-md-6 col-lg-3">
              <div class="project-item">
                   <a href="#">
-                    <img src="images/work/work-4.jpg" alt="our work">
+                    <img src="public/images/work/work-4.jpg" alt="our work">
                     <div class="project-overlay"> 
                       <div class="text-center caption">
                         <h5 class="fw-bold">Website project</h5>
@@ -593,7 +595,7 @@ START THE 1ST COLUMN  COL-MD-7
           <div class="col-md-6 col-lg-3">
              <div class="project-item">
                   <a href="#">
-                    <img src="images/work/work-5.jpg" alt="our work">
+                    <img src="public/images/work/work-5.jpg" alt="our work">
                     <div class="project-overlay">
                       <div class="text-center caption">
                         <h5 class="fw-bold">Website project</h5>
@@ -606,7 +608,7 @@ START THE 1ST COLUMN  COL-MD-7
           <div class="col-md-6 col-lg-3">
              <div class="project-item">
                   <a href="#">
-                    <img src="images/work/work-1.jpg" alt="our work">
+                    <img src="public/images/work/work-1.jpg" alt="our work">
                     <div class="project-overlay">
                       <div class="text-center caption">
                         <h5 class="fw-bold">Website project</h5>
@@ -619,7 +621,7 @@ START THE 1ST COLUMN  COL-MD-7
           <div class="col-md-6 col-lg-3">
              <div class="project-item">
                   <a href="#">
-                    <img src="images/work/work-2.jpg" alt="our work">
+                    <img src="public/images/work/work-2.jpg" alt="our work">
                     <div class="project-overlay">
                       <div class="text-center caption">
                         <h5 class="fw-bold">Website project</h5>
@@ -632,7 +634,7 @@ START THE 1ST COLUMN  COL-MD-7
           <div class="col-md-6 col-lg-3">
              <div class="project-item">
                   <a href="#">
-                    <img src="images/work/work-1.jpg" alt="our work">
+                    <img src="public/images/work/work-1.jpg" alt="our work">
                     <div class="project-overlay">
                       <div class="text-center caption">
                         <h5 class="fw-bold">Website project</h5>
@@ -859,10 +861,10 @@ START THE 1ST COLUMN  COL-MD-7
      <!-- ==========================================================
                         START SCRIPT SECTION   
     ============================================================-->
-     <script src="assets/js/counter.js" ></script>
-     <script src="assets/js/modal.js" ></script>
-    <script src="assets/js/popper.min.js"></script>
-    <script src="assets/js/bootstrap.min.js" ></script>
+     <script src="public/js/counter.js" ></script>
+     <script src="public/js/modal.js" ></script>
+    <script src="public/js/popper.min.js"></script>
+    <script src="public/js/bootstrap.min.js" ></script>
 
    </body>
 </html> 

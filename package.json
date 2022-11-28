@@ -1,17 +1,17 @@
 {
-  "name": "codewithpatrick.vercel.app",
+  "name": "fitness-shots",
   "version": "1.0.0",
-  "description": "Official portfolio website for Patrick Muriungi",
+  "description": "Fitness shot is a free template appropriate for Fitness and gyme websites",
   "main": "index.js",
   "scripts": {
-    "compile": "sass --watch scss:public/css"
+    "compile": "sass --watch sass:public/css"
   },
   "keywords": [
     "Patrick-muriungi",
-    "muriungi",
-    "codewithpatrick",
-    "code",
-    "kenya"
+    "free fitness template",
+    "fitness",
+    "gym",
+    "free template"
   ],
   "author": "Patrick Muriungi",
   "license": "ISC",
