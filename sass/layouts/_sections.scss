@@ -46,6 +46,7 @@
 
 .video-wrapper { 
   position: relative; 
+  padding: 8rem 0;
   
   
 
@@ -68,9 +69,9 @@
       position: absolute; 
       top: 0; 
       left: 0; 
-      border-width: 1.51rem; 
+      border-width: 1.07rem; 
       border-style: solid; 
-      border-color: rgba($white, .5);
+      border-color: $white;
       border-radius: 100%; 
       animation: pulse-border 3s linear 0s infinite; 
       animation-play-state: running; 

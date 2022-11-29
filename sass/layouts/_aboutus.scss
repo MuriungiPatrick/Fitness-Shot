@@ -12,3 +12,24 @@
   
 
 }
+
+.about-us {
+    position: relative;
+    background: url(/public/images/gym-bg-1.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    padding: 8rem 0;
+
+
+    // @media (min-width: 768px) {
+    //     position: relative;
+    //     background: linear-gradient(90deg, 
+    //     rgba($red, .7) 0%, 
+    //     rgba($red, .7) 50%, 
+    //     transparent 50%) , url(/public/images/gym-bg-1.jpg);
+    //     background-size: cover;
+    //     background-position: center center;
+        
+    // }
+}

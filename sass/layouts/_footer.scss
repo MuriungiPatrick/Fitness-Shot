@@ -6,53 +6,44 @@
   background-color: $dark;
   color: $white; 
 
-  i {
-    font-size: 1rem;
-  }
-  
 
   // START CONTACT BOX WITH ICONS STYLES
-.contact-box {
+.contact {
+  position: relative;
+  align-items: center;
   text-decoration: none;
+  margin-bottom: 1rem;
   
   
-  &__contact-info {
+  .info {
       padding: 0.4rem;
+      align-items: center;
 
-      &--title {
-          // text-align: center;
+      .title {
           font-family: 'Oxygen', sans-serif; 
-          font-weight: 500;
-          
-      }
-
-       a {
-          font-size: 1.4rem;
+          font-weight: 600;
           color: $white;
           text-decoration: none;
-
-          &:hover {
-              color: $primary;
-              text-decoration: none;
-        
-            }
-            
-        }
-        
-      &--sub-title {
-          font-size: 1.2rem;
-          color: $gray-700;
-          text-transform: capitalize;
-          font-weight: 600;
+          
       }
+        
+      .sub-title {
+          color: $gray-500;
+          text-transform: capitalize;
+          font-weight: 500;
+          
+      }  
 
   }
 
-  &--contact-icons {
-      width: 4rem;
+  .icons {
       padding-top: 0.3rem;
-    }   
 
+      i {
+        font-size: 2.5rem;
+        color: $secondary;
+      }
+    }   
   
 }
 
@@ -133,10 +124,10 @@
 
     &__copyright {
       font-size: 1rem;
-      color: $gray-700;
+      color: $gray-300;
       
        a {
-        color: $gray-800;
+        color: $primary;
         transition: all .3s ease;  
         text-decoration: none;
 

@@ -31,27 +31,41 @@ Designed By: Patrick Muriungi
 
 **/
 .header {
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to right, rgba(141, 23, 238, 0.8), rgba(9, 164, 253, 0.8)), url("/images/about-3.jpg");
+  height: 50vh;
+  position: relative;
+  background: linear-gradient(180deg, rgba(238, 23, 141, 0.7) 100%, rgba(238, 23, 141, 0.7) 100%, transparent 100%), url(/public/images/gym-bg-1.jpg);
   background-size: cover;
-  background-position: center;
-  padding-top: 10rem;
+  background-position: center center;
+  padding: 6rem 1rem;
+}
+@media (min-width: 992px) {
+  .header {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(90deg, rgba(238, 23, 141, 0.7) 0%, rgba(238, 23, 141, 0.7) 60%, transparent 50%), url(/public/images/gym-bg-1.jpg);
+    background-size: cover;
+    background-position: center center;
+    padding-top: 10rem;
+  }
 }
 
 .navbar-brand {
-  color: #fff;
+  color: #ee178d;
+}
+.navbar-brand h1 {
+  color: #ee178d;
 }
 
-.menu {
-  color: #fff;
-  background: linear-gradient(to right, rgba(141, 23, 238, 0.8), rgba(9, 164, 253, 0.8));
+.navbar {
+  color: #ee178d;
+  background: linear-gradient(to right, rgba(238, 23, 141, 0.8), rgba(182, 10, 116, 0.8));
 }
-.menu li {
+.navbar li {
   padding: 0 0.6rem;
-  color: #fff;
+  color: #ee178d;
 }
-.menu li a {
+.navbar li a {
   text-decoration: none;
   transition: all 0.3s;
   font-size: 1rem;
@@ -60,10 +74,51 @@ Designed By: Patrick Muriungi
   animation: moveInBottom 0.5s ease-out 0.5s;
   font-family: "Oxygen", sans-serif;
   font-weight: 600;
-  color: #fff;
+  color: #ee178d;
 }
-.menu li a:hover {
-  color: #09a4fd;
+.navbar li a:hover {
+  color: #b60a74;
+  transform: translateY(8px);
+  transition: all 0.3s;
+  border-bottom: 2px solid rgba(182, 10, 116, 0.8);
+}
+.navbar button {
+  top: 0;
+  margin-bottom: 10px;
+  border: 0;
+}
+.navbar .line {
+  fill: none;
+  stroke: #ee178d;
+  stroke-width: 6;
+  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1), stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.navbar .x1 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+.navbar .x2 {
+  stroke-dasharray: 60 60;
+  stroke-width: 6;
+}
+.navbar .x3 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+.navbar .opened .x1 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
+}
+.navbar .opened .x2 {
+  stroke-dasharray: 1 60;
+  stroke-dashoffset: -30;
+  stroke-width: 6;
+}
+.navbar .opened .x3 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
 }
 
 .menu-tabs {
@@ -73,14 +128,14 @@ Designed By: Patrick Muriungi
   position: sticky;
 }
 .menu-tabs a {
-  color: #8d17ee;
+  color: #ee178d;
   text-decoration: none;
 }
 .menu-tabs a:hover {
   text-decoration: underline;
 }
 .menu-tabs i {
-  color: #8d17ee;
+  color: #ee178d;
   margin-right: 0.4rem;
 }
 .menu-tabs ul, .menu-tabs li {
@@ -114,7 +169,7 @@ Designed By: Patrick Muriungi
   visibility: visible;
 }
 .we-do:hover {
-  background-color: #8d17ee;
+  background-color: #ee178d;
   color: #fff;
 }
 
@@ -135,7 +190,7 @@ Designed By: Patrick Muriungi
   margin-top: -3.75rem;
   width: 5rem;
   height: 5rem;
-  background: #8d17ee;
+  background: #ee178d;
   border-radius: 50%;
   display: inline-block;
   margin-bottom: 1rem;
@@ -154,7 +209,7 @@ Designed By: Patrick Muriungi
   font-weight: 500;
 }
 .services:hover {
-  background: #8d17ee !important;
+  background: #ee178d !important;
   color: #fff !important;
 }
 .services:hover .icon {
@@ -162,7 +217,7 @@ Designed By: Patrick Muriungi
   margin-left: 1.25rem;
 }
 .services:hover .icon span {
-  color: #8d17ee;
+  color: #ee178d;
 }
 .services:hover h3 {
   color: #fff;
@@ -209,17 +264,25 @@ Designed By: Patrick Muriungi
   width: 100%;
 }
 .showcase-wrapper img {
+  padding: 1rem 0;
+  object-fit: cover;
   max-width: 100%;
   vertical-align: middle;
+  height: 100%;
+}
+.showcase-wrapper img:hover {
+  transform: scale(1.05);
+  transition: all 0.3s;
+  outline-offset: 1.5rem solid #ee178d;
 }
 
 .showcase-about {
-  padding-left: 0.8rem;
+  padding: 1rem 0;
 }
 
 .showcase-icon {
   font-size: 3rem;
-  color: #8d17ee;
+  color: #ee178d;
   padding-left: 0.8rem;
 }
 
@@ -236,13 +299,22 @@ Designed By: Patrick Muriungi
   height: 100%;
 }
 
+.about-us {
+  position: relative;
+  background: url(/public/images/gym-bg-1.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  padding: 8rem 0;
+}
+
 /**-----------------------------------------------------------------
                SKILLS SECTION
 ---------------------------------------------------------------------
 **/
 .skills-section {
   padding: 0 0 4rem 0;
-  background-image: linear-gradient(to top, rgba(141, 23, 238, 0.9), rgba(9, 164, 253, 0.9)), url("/images/about-2.jpg");
+  background-color: rgba(233, 236, 239, 0.6);
   background-attachment: fixed;
 }
 
@@ -269,8 +341,8 @@ Designed By: Patrick Muriungi
   position: relative;
 }
 .quote__q-list li:before {
-  font-family: "fontawesome";
-  content: "\f00c";
+  font-family: "bootstrap-icons";
+  content: "\f26f";
   margin-right: 0.8rem;
   font-size: 1.2rem;
   color: #fff;
@@ -310,10 +382,10 @@ Designed By: Patrick Muriungi
   background-attachment: fixed;
   background-position: center;
   padding: 10rem 0;
-  color: #8d17ee;
+  color: #ee178d;
 }
 .stats i {
-  color: #8d17ee;
+  color: #ee178d;
 }
 
 .faq {
@@ -339,6 +411,7 @@ Designed By: Patrick Muriungi
 
 .video-wrapper {
   position: relative;
+  padding: 8rem 0;
 }
 .video-wrapper .video-button {
   color: #fff;
@@ -346,7 +419,7 @@ Designed By: Patrick Muriungi
 .video-wrapper .video-button svg {
   width: 6rem;
   height: 6rem;
-  color: #8d17ee;
+  color: #ee178d;
 }
 .video-wrapper .border-animation {
   width: 100%;
@@ -354,9 +427,9 @@ Designed By: Patrick Muriungi
   position: absolute;
   top: 0;
   left: 0;
-  border-width: 1.51rem;
+  border-width: 1.07rem;
   border-style: solid;
-  border-color: rgba(255, 255, 255, 0.5);
+  border-color: #fff;
   border-radius: 100%;
   animation: pulse-border 3s linear 0s infinite;
   animation-play-state: running;
@@ -379,7 +452,7 @@ Designed By: Patrick Muriungi
 .project-item {
   width: 100%;
   height: 17.8125rem;
-  background-color: #8d17ee;
+  background-color: #ee178d;
   position: relative;
   z-index: 0;
   border-radius: 0.3125rem;
@@ -408,7 +481,7 @@ Designed By: Patrick Muriungi
 }
 
 .project-overlay {
-  background: none repeat scroll 0 0 rgba(141, 23, 238, 0.75);
+  background: none repeat scroll 0 0 rgba(238, 23, 141, 0.75);
   height: 100%;
   width: 100%;
   position: absolute;
@@ -433,38 +506,41 @@ Designed By: Patrick Muriungi
 .client {
   width: 100%;
   height: 100%;
-  background-color: #8d17ee;
-}
-.client__client-img {
-  width: 5rem;
-  height: 5rem;
+  background: linear-gradient(rgba(238, 23, 141, 0.8), rgba(238, 23, 141, 0.8)), url(/public/images/bg-6.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  padding: 5rem 0;
   position: relative;
 }
-.client__client-img img {
-  max-width: 100%;
-  height: 100%;
-  -webkit-border-radius: 50%;
-  -o-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  border-radius: 50%;
-}
-.client__t-card {
-  padding: 1.8125rem 1.125rem;
+.client .t-card {
+  padding: 1rem;
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 0.625rem;
   color: #212529;
   height: auto;
+  text-align: center;
+  margin-bottom: 1rem;
 }
-.client__name {
+.client .t-card .name {
   margin-bottom: 0;
+  text-transform: capitalize;
+}
+.client .t-card .name h4 {
   font-weight: 500;
-  font-size: 1.8rem;
+}
+.client .t-card .client-img {
+  justify-content: center;
+}
+.client .t-card .client-img img {
+  width: 80px;
+  height: 80px;
+  border: 2px solid #ee178d;
 }
 
 .carousel-icon i {
   font-size: 5rem;
-  color: rgba(255, 255, 255, 0.3);
+  color: #fff;
 }
 
 .carousel-item i {
@@ -472,20 +548,12 @@ Designed By: Patrick Muriungi
   color: rgba(33, 37, 41, 0.6);
 }
 
-.arrow-down {
-  width: 0;
-  height: 0;
-  border-left: 1.5625rem solid transparent;
-  border-right: 1.5625rem solid transparent;
-  border-top: 1.25rem solid rgba(255, 255, 255, 0.8);
-}
-
 /**--------------------------------------------------------------------------------------
                             THE SERVICES PAGE SECTION
 ---------------------------------------------------------------------------------------------
 **/
 .services {
-  background-image: linear-gradient(rgba(141, 23, 238, 0.9), rgba(141, 23, 238, 0.9));
+  background-image: linear-gradient(rgba(238, 23, 141, 0.9), rgba(238, 23, 141, 0.9));
 }
 
 .features-2 {
@@ -499,37 +567,33 @@ Designed By: Patrick Muriungi
   background-color: #212529;
   color: #fff;
 }
-.footer i {
-  font-size: 1rem;
-}
-.footer .contact-box {
+.footer .contact {
+  position: relative;
+  align-items: center;
   text-decoration: none;
+  margin-bottom: 1rem;
 }
-.footer .contact-box__contact-info {
+.footer .contact .info {
   padding: 0.4rem;
+  align-items: center;
 }
-.footer .contact-box__contact-info--title {
+.footer .contact .info .title {
   font-family: "Oxygen", sans-serif;
-  font-weight: 500;
-}
-.footer .contact-box__contact-info a {
-  font-size: 1.4rem;
+  font-weight: 600;
   color: #fff;
   text-decoration: none;
 }
-.footer .contact-box__contact-info a:hover {
-  color: #8d17ee;
-  text-decoration: none;
-}
-.footer .contact-box__contact-info--sub-title {
-  font-size: 1.2rem;
-  color: #495057;
+.footer .contact .info .sub-title {
+  color: #adb5bd;
   text-transform: capitalize;
-  font-weight: 600;
+  font-weight: 500;
 }
-.footer .contact-box--contact-icons {
-  width: 4rem;
+.footer .contact .icons {
   padding-top: 0.3rem;
+}
+.footer .contact .icons i {
+  font-size: 2.5rem;
+  color: #b60a74;
 }
 .footer .footer-center {
   padding: 1rem;
@@ -539,17 +603,17 @@ Designed By: Patrick Muriungi
   text-decoration: none;
 }
 .footer .footer-center a:hover {
-  color: #8d17ee;
+  color: #ee178d;
 }
 .footer .footer-sm a {
-  color: #8d17ee;
+  color: #ee178d;
 }
 .footer .footer-sm a i {
   font-size: 1.8rem;
   padding-left: 1rem;
 }
 .footer .footer-sm a i:hover {
-  color: #09a4fd;
+  color: #b60a74;
 }
 
 .f-list {
@@ -567,7 +631,7 @@ Designed By: Patrick Muriungi
 }
 .f-list > li a:hover {
   padding-bottom: 4rem;
-  color: #8d17ee;
+  color: #ee178d;
   transform: skewY(10deg) skewX(5deg) scale(1.1);
   transition: all 0.3s;
 }
@@ -577,34 +641,34 @@ Designed By: Patrick Muriungi
 }
 .footer-bottom__copyright {
   font-size: 1rem;
-  color: #495057;
+  color: #dee2e6;
 }
 .footer-bottom__copyright a {
-  color: #343a40;
+  color: #ee178d;
   transition: all 0.3s ease;
   text-decoration: none;
 }
 .footer-bottom__copyright a:hover {
-  color: #8d17ee;
+  color: #ee178d;
   text-decoration: underline;
 }
 
 .phone {
-  stroke: #8d17ee;
+  stroke: #ee178d;
   stroke-dasharray: 141;
   stroke-dashoffset: 141;
   animation: line-Animate 3s ease forwards;
 }
 
 .email {
-  stroke: #8d17ee;
+  stroke: #ee178d;
   stroke-dasharray: 141;
   stroke-dashoffset: 141;
   animation: line-Animate 3s ease forwards;
 }
 
 .location {
-  stroke: #8d17ee;
+  stroke: #ee178d;
   stroke-dasharray: 205;
   stroke-dashoffset: 205;
   animation: line-Animate 3s ease forwards;
@@ -615,6 +679,11 @@ Designed By: Patrick Muriungi
               CARD STYLES 
 -------------------------------------------------------------------------
 **/
+.pricing-section {
+  background-color: #f8f9fa;
+  padding-top: 8rem;
+}
+
 .pricing {
   width: 100%;
 }
@@ -624,7 +693,7 @@ Designed By: Patrick Muriungi
   margin-top: -3.75rem;
   width: 5rem;
   height: 5rem;
-  background: #8d17ee;
+  background: #ee178d;
   border-radius: 50%;
   display: inline-block;
   margin-bottom: 1rem;
@@ -639,14 +708,14 @@ Designed By: Patrick Muriungi
   color: #fff;
 }
 .pricing:hover {
-  background-color: #8d17ee !important;
+  background-color: #ee178d !important;
 }
 .pricing:hover .price-icon {
   background: #fff;
   margin-left: 1.25rem;
 }
 .pricing:hover .price-icon span {
-  color: #8d17ee;
+  color: #ee178d;
 }
 .pricing:hover .price-body {
   color: #fff;
@@ -658,7 +727,7 @@ Designed By: Patrick Muriungi
   margin-top: -3.75rem;
   width: 5rem;
   height: 5rem;
-  background: #8d17ee;
+  background: #ee178d;
   border-radius: 50%;
   display: inline-block;
   margin-bottom: 1rem;
