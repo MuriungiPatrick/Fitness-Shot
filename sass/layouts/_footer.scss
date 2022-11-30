@@ -39,9 +39,23 @@
   .icons {
       padding-top: 0.3rem;
 
-      i {
+      .whatsapp {
         font-size: 2.5rem;
-        color: $secondary;
+        i {
+          color: $green;
+        }
+      }
+      .email {
+        font-size: 2.5rem;
+        i {
+          color: $white;
+        }
+      }
+      .map {
+        font-size: 2.5rem;
+        i {
+          color: $secondary;
+        }
       }
     }   
   
@@ -143,28 +157,23 @@
 
   }
 
-// SVG STYLES ON THE FOOTER
 
-.phone {
-stroke: $primary;
-stroke-dasharray: 141;
-stroke-dashoffset: 141;
-animation: line-Animate 3s ease forwards;
 
-}
 
-.email {
-stroke: $primary;
-stroke-dasharray: 141;
-stroke-dashoffset: 141;
-animation: line-Animate 3s ease forwards;
 
-}
+// STYLE THE BACK TO TOP BUTTON 
+.back-to-top {
+  position: fixed;
+  width: 3rem;
+  height: 3rem;
+  right: 1.875rem;
+  bottom: 5rem;
+  z-index: 9999;
+  background-color: $primary;
 
-.location {
-stroke: $primary;
-stroke-dasharray: 205;
-stroke-dashoffset: 205;
-animation: line-Animate 3s ease forwards;
-
+  i {
+      color: $white;
+      @include absoluteCenter;
+  }
+ 
 }

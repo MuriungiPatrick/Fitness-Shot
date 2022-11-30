@@ -1,9 +1,13 @@
 /* 
 =========================================
-Muriungi.dev - The Official Website
-Version: 1.5.20 (Initial Release)
-Designed By: Patrick Muriungi
+Theme Name - Fitness Shot
+Description:  a fitness and gym website template.
+Version: 1.0.22 (Initial Release)
+Author: Patrick Muriungi
+Theme URI: https://vaxacode.netlify.app
+Author URI: https://vaxacode.netlify/fitness-shot
 =========================================
+/*
 
 1. Custom Theme Colors
 2. Base 
@@ -22,16 +26,8 @@ Designed By: Patrick Muriungi
            WEBSITE MAIN COLORS 
 ------------------------------------------------------------------------
 **/
-/** 
-0     -   600PX   : PHONE
-600 -   900PX   : TABLET PORTRAIT
-900  -   1200PX : TABLET LANDSCAPE
-1200  -   1800PX : Where our normal styles apply
-1800 - +          : DESKTOP
-
-**/
 .header {
-  height: 50vh;
+  height: 80vh;
   position: relative;
   background: linear-gradient(180deg, rgba(238, 23, 141, 0.7) 100%, rgba(238, 23, 141, 0.7) 100%, transparent 100%), url(/public/images/gym-bg-1.jpg);
   background-size: cover;
@@ -59,7 +55,7 @@ Designed By: Patrick Muriungi
 
 .navbar {
   color: #ee178d;
-  background: linear-gradient(to right, rgba(238, 23, 141, 0.8), rgba(182, 10, 116, 0.8));
+  background-color: #fff;
 }
 .navbar li {
   padding: 0 0.6rem;
@@ -74,13 +70,15 @@ Designed By: Patrick Muriungi
   animation: moveInBottom 0.5s ease-out 0.5s;
   font-family: "Oxygen", sans-serif;
   font-weight: 600;
-  color: #ee178d;
 }
-.navbar li a:hover {
-  color: #b60a74;
+.navbar li a:link, .navbar li a:visited {
+  color: #212529;
+}
+.navbar li a:hover, .navbar li a:active {
+  color: #ee178d;
   transform: translateY(8px);
   transition: all 0.3s;
-  border-bottom: 2px solid rgba(182, 10, 116, 0.8);
+  border-bottom: 2px solid rgba(238, 23, 141, 0.8);
 }
 .navbar button {
   top: 0;
@@ -548,6 +546,10 @@ Designed By: Patrick Muriungi
   color: rgba(33, 37, 41, 0.6);
 }
 
+.carousel-indicators {
+  margin-bottom: -2rem !important;
+}
+
 /**--------------------------------------------------------------------------------------
                             THE SERVICES PAGE SECTION
 ---------------------------------------------------------------------------------------------
@@ -591,8 +593,22 @@ Designed By: Patrick Muriungi
 .footer .contact .icons {
   padding-top: 0.3rem;
 }
-.footer .contact .icons i {
+.footer .contact .icons .whatsapp {
   font-size: 2.5rem;
+}
+.footer .contact .icons .whatsapp i {
+  color: #198754;
+}
+.footer .contact .icons .email {
+  font-size: 2.5rem;
+}
+.footer .contact .icons .email i {
+  color: #fff;
+}
+.footer .contact .icons .map {
+  font-size: 2.5rem;
+}
+.footer .contact .icons .map i {
   color: #b60a74;
 }
 .footer .footer-center {
@@ -653,25 +669,21 @@ Designed By: Patrick Muriungi
   text-decoration: underline;
 }
 
-.phone {
-  stroke: #ee178d;
-  stroke-dasharray: 141;
-  stroke-dashoffset: 141;
-  animation: line-Animate 3s ease forwards;
+.back-to-top {
+  position: fixed;
+  width: 3rem;
+  height: 3rem;
+  right: 1.875rem;
+  bottom: 5rem;
+  z-index: 9999;
+  background-color: #ee178d;
 }
-
-.email {
-  stroke: #ee178d;
-  stroke-dasharray: 141;
-  stroke-dashoffset: 141;
-  animation: line-Animate 3s ease forwards;
-}
-
-.location {
-  stroke: #ee178d;
-  stroke-dasharray: 205;
-  stroke-dashoffset: 205;
-  animation: line-Animate 3s ease forwards;
+.back-to-top i {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /**
@@ -740,10 +752,10 @@ Designed By: Patrick Muriungi
 .intro span {
   font-size: 2.5rem;
   color: #fff;
-  transform: translate(-50%, -50%);
-  left: 50% !important;
-  top: 50% !important;
   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .intro span i {
   font-size: 2rem;

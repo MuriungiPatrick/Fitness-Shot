@@ -1,12 +1,13 @@
 @use '../custom' as *;
 // @use '../abstract/mixins' as *;
 
-@mixin absolutecenter {   
-    transform: translate(-50%, -50%);
-    left: 50% !important;
-    top: 50% !important;
-    position: absolute;
 
+// ABSOLUTE CENTER 
+@mixin absoluteCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 @mixin transition($transition) {
@@ -38,14 +39,3 @@
 	}
 }
 
-// START MEDIA QUERY
-
-/** 
-0     -   600PX   : PHONE
-600 -   900PX   : TABLET PORTRAIT
-900  -   1200PX : TABLET LANDSCAPE
-1200  -   1800PX : Where our normal styles apply
-1800 - +          : DESKTOP
-
-**/
-    

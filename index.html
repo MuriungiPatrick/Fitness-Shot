@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Home Landing Page -  Bootstrap 4.5</title>
+    <title>Home Fitness Shot - Landing Page -  Bootstrap 5.2</title>
+    <meta name="keywords" content="fitness, fitness shot, gym, nutrition, fitness center, fitness template">
+    <meta name="description" content="enter your description here">
     <link rel="stylesheet" href="public/css/style.css">
     <link rel="stylesheet" href="public/css/animate.css">
     <link rel="stylesheet" href="public/css/bootstrap.css">
@@ -13,11 +15,11 @@
 <body>
 
     <!-- <header id="dtr-header-global" class="fixed-top"> -->
-    <nav class="navbar navbar-expand-lg navbar-dark shadow p-1 pt-3">
-            <div class="container">               
+    <nav class="navbar navbar-expand-lg shadow p-1 pt-3" id="navbar">
+            <div class="container-fluid">               
             <a class="navbar-brand" href="#home">
-                <!-- <img src="public/images/logo.png" alt="logo"> -->
-                <h1>Fitness Shot</h1>
+                <img src="public/images/logo.png" alt="logo">
+                <!-- <h1>Fitness Shot</h1> -->
             </a>
             <button class="navbar-toggler" type="button" 
             data-bs-toggle="collapse" data-bs-target="#navbarNav" 
@@ -32,11 +34,12 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
               <ul class="navbar-nav navbar-right fw-bold">
                <li class="nav-item"><a class="nav-link" href="#home">Home </a></li>
-               <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-               <li class="nav-item"><a class="nav-link" href="#brief">Brief</a></li>
+               <li class="nav-item"><a class="nav-link" href="#services">services</a></li>
                <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
+               <li class="nav-item"><a class="nav-link" href="#about">about</a></li>
+               <li class="nav-item"><a class="nav-link" href="#faq">faq</a></li>
                <li class="nav-item"><a class="nav-link" href="#testimonial">Testimonial</a></li>        
-               <li class="nav-item"><a class="nav-link" href="#testimonial">get in touch</a></li>        
+               <li class="nav-item"><a class="nav-link" href="#footer">Contact</a></li>        
                 </ul>    
                 <a href="https://api.whatsapp.com/send?phone=+254728365413&text=Hi%20how%20are%20you?">       
                 <button type="button" class="btn btn-success">
@@ -46,7 +49,11 @@
                 </a>     
               </div>  
             </div>
-          </nav>          
+          </nav>       
+          
+          <a href="#" class="back-to-top shadow scrollto">
+            <i class="bi bi-chevron-up"></i>
+        </a>  
         <!-- hero section start -->  
         <!-- </header> -->
 
@@ -56,10 +63,12 @@
             <!-- column 1 starts -->
               <div class="col-12 col-lg-7 col-md-7">
                 <!-- Heading -->    
-                  <h1 class="display-2 fw-bold text-uppercase">Fitness Shot</h1>
-                  <h5>We are a fitness and nutrition center offering services to all races, ethnicity 
-                    and religions.
-                  </h5>                   
+                  <h1 class="display-2 fw-bold text-uppercase">TRACK YOUR HEALTH </h1>
+                  <h6 class="lh-lg">Enjoy our progressive programs with world class ątness
+                    equipment, trainers and nutrition counselors to help you
+                    transform your body and health.
+                    
+                  </h6>                   
                       <!-- Text -->
                   
                   <!-- button -->
@@ -76,8 +85,6 @@
                   </div>       
                 </div>
               </div>
-         <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-          <path fill="#fff" fill-opacity="1" d="M0,64L48,80C96,96,192,128,288,122.7C384,117,480,75,576,85.3C672,96,768,160,864,160C960,160,1056,96,1152,74.7C1248,53,1344,75,1392,85.3L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg> -->
       </section>
 
    
@@ -87,7 +94,7 @@
                       START THE SHOWCASE SECTION
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
-    <section class="services-showcase" id="brief">
+    <section class="services-showcase" id="services">
       <div class="container">
         <div class="row text-center">
           <div class="col-12">
@@ -105,7 +112,7 @@
                 <a class="nav-link" id="profile-tab" href="#personal-trainer" role="tab" aria-controls="profile" aria-selected="false">Personal Trainer</a>
               </li>
               <li class="nav-item" role="presentation">
-                <a class="nav-link" id="contact-tab" href="#cardio-program" role="tab" aria-controls="contact" aria-selected="false">cardio-program</a>
+                <a class="nav-link" id="cardio-tab" href="#cardio-program" role="tab" aria-controls="contact" aria-selected="false">Cardio Program</a>
               </li>
             </ul>                    
         </div>
@@ -142,7 +149,7 @@
                   START ROW 2 OF SHOWCASE  
                 ==============================-->
    
-            <div class="mt-5" id="Personal-trainer" role="tabpanel" aria-labelledby="profile-tab">
+            <div class="mt-5" id="personal-trainer" role="tabpanel" aria-labelledby="profile-tab">
               <div class="row border mb-5 mt-4">
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     <div class="mw-100 showcase-wrapper">
@@ -169,7 +176,7 @@
                 <!-- ============================
                   START ROW 3 OF SHOWCASE  
                 ==============================-->
-          <div class="mt-5 mb-5" id="cardio-program" role="tabpanel" aria-labelledby="contact-tab">
+          <div class="mt-5 mb-5" id="cardio-program" role="tabpanel" aria-labelledby="cardio-tab">
             <div class="row border mb-0 mt-0">
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     <i class="showcase-icon bi bi-prescription"aria-hidden="true"></i>
@@ -208,8 +215,10 @@
             doloribus dicta voluptates, dignissimos nisi praesentium commodi quam mollitia.
           </p>
           <a href="#" class="btn btn-outline-light">Learn more <i class="bi bi-arrow-right"></i> </a>    
+          
+        </div>
       </div>
-      </div>
+      
       <div class="col-12 col-lg-6 col-md-6 text-end"><!-- column 2 starts -->                
         <div class="video-wrapper"> 
           <!-- <img class="img-fluid" src="public/images/video-bg-img.png" alt="video-bg">                  -->
@@ -225,8 +234,110 @@
             </a> 
           </div>                          
       </div>
+      <div class="col-lg-3 col-md-6 col-sm-12 mt-5 bg-light p-3">
+       <h5> QUALITY EQUIPMENT</h5>
+       <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum natus tempora totam.
+       </p>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12 mt-5 bg-light p-3">
+        <h5>HEALTHY NUTRITION PLAN</h5>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum natus tempora totam.
+        </p>
+       </div>
+      <div class="col-lg-3 col-md-6 col-sm-12 mt-5 bg-light p-3"> 
+        <h5>SHOWER SERVICE </h5>   
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum natus tempora totam.
+        </p>       
+        </div>
+      <div class="col-lg-3 col-md-6 col-sm-12 mt-5 bg-light p-3"> 
+        <h5>UNIQUE TO YOUR NEEDS</h5>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum natus tempora totam.
+        </p>
+        </div>
+  </div>
   </div>
 </section>
+
+
+
+  <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+                          START  ANOTHER SECTION 
+  //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+  <section class="skills-section" id="video">
+    <div class="text-center p-4">
+    </div>
+    <div class="container">
+    <div class="row text-white">
+    <div class="col-12 col-lg-6 bg-primary shadow p-3">
+      <div class="quote w-100">         
+        <h5 class="display-5 fw-bold text-white">BMI CALCULATOR CHART</h5>  
+        <table class="table table-bordered">
+          <tbody class="text-white p-2">
+          <tr>
+            <td colspan="2">BMI WEIGHT</td>
+            <td>Weight Status</td>           
+          </tr>
+          <tr>
+            <td colspan="2">
+              <ul class="list-inline">
+                <li>Below 18.5 </li>
+                <li>18.5 - 24.9 </li>
+                <li>25.0 - 29.9 </li>
+                <li>30.0 - and Above </li>
+              </ul>
+            </td>
+            <td>
+              <ul class="list-inline">
+                <li>Underweight</li>
+                <li>Healthy</li>
+                <li>Overweight</li>
+                <li>Obese</li>
+              </ul>
+            </td>
+          </tr>             
+          </tbody>
+        </table>    
+        <p class="lh-lg">* BMR Metabolic Rate / BMI Body Mass Index</p>
+      </div>
+    </div>
+    <div class="col-12 col-lg-6 bg-white shadow-lg p-3">
+        <div class="form w-100 pb-2">     
+            <h4 class="heading heading--topics pb-3">Calculate</h4>   
+              <form class="row g-3" action="#">
+              <div class="col-md-6">
+            <input type="text" required class="form-control form-control-lg shadow" 
+                id="inputFirstName" placeholder="Height/cm">
+              </div>
+            <div class="col-md-6">
+          <input type="text" required class="form-control form-control-lg shadow" 
+              id="inputLastName" placeholder="Weight/kg">
+            </div>
+            <div class="col-12">
+          <input type="email" required class="form-control form-control-lg shadow" 
+            id="colFormLabel" placeholder="Age">
+            </div> 
+          <input type="email" required class="form-control form-control-lg shadow" 
+            id="colFormLabel" placeholder="Sex">
+            </div> 
+                  <!-- start the message textarea -->
+      
+           <div class="col-6">
+            <div class="text-start">
+              <button class="btn btn-primary text-white" type="submit">
+                Calculate <i class="bi bi-plane" title="submit"></i>
+                  </button> 
+                </div>   
+                </div>
+              </form>      
+            </div> <!-- end form div -->
+          </div>
+        </div>
+    </section>
 
  <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
                            START THE PRICING SECTION 
@@ -347,7 +458,7 @@
                 START TESTIMONIALS SECTION
   /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
   <!-- Client start -->
-<section class="client">
+<section class="client" id="testimonial">
   <div class="container">
     <div class="row text-center">
       <div class="col-12">
@@ -357,16 +468,12 @@
       </div>
     </div>
 <div class="row justify-content-center text-white">
-  <div class="col-12">
-    <ol class="carousel-indicators">
-      <li data-bs-target="#carousel" data-bs-slide-to="0" class="active bg-primary"></li>
-      <li data-bs-target="#carousel" data-bs-slide-to="1" class="bg-primary"></li>
-      <li data-bs-target="#carousel" data-bs-slide-to="2" class="bg-primary"></li>
-      <li data-bs-target="#carousel" data-bs-slide-to="3" class="bg-primary"></li>
-      <li data-bs-target="#carousel" data-bs-slide-to="4" class="bg-primary"></li>
-    </ol>
-  </div>
   <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-bs-target="#carousel" data-bs-slide-to="0" class="active bg-white rounded-circle"></li>
+      <li data-bs-target="#carousel" data-bs-slide-to="1" class="bg-white rounded-circle"></li>
+      <!-- <li data-bs-target="#carousel" data-bs-slide-to="2" class="bg-white rounded-circle"></li> -->
+    </ol>
     <div class="carousel-inner">
       <div class="carousel-item active">
         <div class="row">
@@ -475,7 +582,7 @@
           </div>          
         </div>
       </div>
-      <div class="text-center mt-3">
+      <div class="text-center mt-5">
         <a class="bi bi-chevron-left btn btn-outline-light" href="#carouselExampleCaptions"
           data-bs-slide="prev"></a>
         <a class="bi bi-chevron-right btn btn-outline-light" href="#carouselExampleCaptions"
@@ -490,7 +597,7 @@
                                      START Frequently asked Questions SECTION
   //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
 
-  <section class="faq bg-white">
+  <section class="faq bg-white" id="faq">
     <div class="text-center mb-5">
       <h2 class="display-3 fw-bold">FAQ ?</h2>
       <hr class="gray mb-4 mt-0 d-inline-block mx-auto" style="width: 100px; height:3px">
@@ -501,10 +608,10 @@
 <!-- ==================================
 START THE 1ST COLUMN  COL-MD-7
 ======================================-->
-        <div class="col-lg-12 col-md-12">
+        <div class="col-lg-6 col-md-6 col-sm-12">
         <div class="accordion" id="accordionExample">
-        <div class="accordion-item shadow">
-          <h2 class="accordion-header" id="headingOne">
+          <div class="accordion-item shadow">
+            <h2 class="accordion-header" id="headingOne">
             <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
               who are my trainers
             </button>
@@ -532,6 +639,7 @@ START THE 1ST COLUMN  COL-MD-7
           </div>
         </div>
       </div>
+      
       <div class="accordion-item shadow">
         <h2 class="accordion-header" id="headingThree">
           <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
@@ -542,159 +650,50 @@ START THE 1ST COLUMN  COL-MD-7
           <div class="accordion-body">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. 
             Repellendus ut ea praesentium itaque? Quaerat tenetur beatae debitis repellat ipsa, sed dolor,
-             nemo quasi, repudiandae ducimus perferendis doloribus. 
+            nemo quasi, repudiandae ducimus perferendis doloribus. 
             Suscipit tenetur repellendus eveniet fugit, id animi quo. Dolor nesciunt hic voluptate rerum?
           </div>
         </div>
       </div>
-      <div class="accordion-item shadow">
-        <h2 class="accordion-header" id="headingFour">
-          <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-            How can I create an Account
-          </button>
-        </h2>
-        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-          <div class="accordion-body">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus ea, dolorum a deserunt quia provident placeat debitis, exercitationem recusandae esse, necessitatibus repellendus odit animi fuga quas? Consectetur, laudantium.
+    </div>
+  </div>
+    <div class="col-lg-6 col-md-6 col-sm-12">
+    <div class="accordion" id="accordionExample">
+        <div class="accordion-item shadow">
+          <h2 class="accordion-header" id="headingFour">
+            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              How can I create an Account
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus ea, dolorum a deserunt quia provident placeat debitis, exercitationem recusandae esse, necessitatibus repellendus odit animi fuga quas? Consectetur, laudantium.
+            </div>
           </div>
         </div>
-      </div>
-          <div class="accordion-item shadow">
-            <h2 class="accordion-header" id="headingFive">
-              <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                Can I be refunded if am not satisfied
-              </button>
-            </h2>
-            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis inventore quos aspernatur libero quisquam soluta officia reprehenderit, ducimus cumque laudantium, voluptates natus totam, iure quod expedita? Natus labore sint veniam nulla laboriosam?
-                </p>
+            <div class="accordion-item shadow">
+              <h2 class="accordion-header" id="headingFive">
+                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                  Can I be refunded if am not satisfied
+                </button>
+              </h2>
+              <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis inventore quos aspernatur libero quisquam soluta officia reprehenderit, ducimus cumque laudantium, voluptates natus totam, iure quod expedita? Natus labore sint veniam nulla laboriosam?
+                  </p>
               </div>
             </div>
           </div>
         </div>
-      </div>
-     </div>
-    </div>
-  </section>
-
-
-  <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-                     START THE OUR WORK SECTION  
-  /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
-<section class="project">
-      <div class="text-center mb-5">
-        <h2 class="display-3 fw-bold">Latest work </h2>
-        <hr class="gray mb-4 mt-0 d-inline-block mx-auto" style="width: 100px; height:3px">
-         <p class="lh-lg text-gray-600">frequently asked questions, get knowledge befere hand</p>
-      </div>
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-6 col-lg-3">
-             <div class="project-item">
-                  <a href="#">
-                    <img src="public/images/work/work-1.jpg" alt="our work">
-                    <div class="project-overlay">
-                      <div class="text-center caption">
-                        <h5 class="fw-bold">Website project</h5>
-                        <span class="fw-light">blog location254.com</span>
-                        </div>
-                      </div>
-                   </a>
-              </div>
-          </div>   
-      </div>
-    </div>
+      </div>  
   </div>
 </section>
+
      
         
         
     
-
-  <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-                          START  ANOTHER SECTION 
-  //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
-
-<section class="skills-section" id="video">
-  <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ddd" fill-opacity="100" d="M0,128L48,112C96,96,192,64,288,90.7C384,117,480,203,576,202.7C672,203,768,117,864,101.3C960,85,1056,139,1152,149.3C1248,160,1344,128,1392,112L1440,96L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg> -->
-    <div class="text-center p-4">
-      <!-- <h2 class="display-3 fw-bold">BMI CALCULATOR </h2> -->
-      <hr class="bg-white mb-4 mt-0 d-inline-block mx-auto" style="width: 100px; height:3px">  
-    </div>
-    <div class="container">
-    <div class="row text-white">
-    <div class="col-12 col-lg-6 bg-primary shadow p-3">
-      <div class="quote w-100">         
-        <h5 class="display-5 fw-bold text-white">BMI CALCULATOR CHART</h5>  
-        <table class="table table-bordered">
-          <tbody class="text-white p-2">
-          <tr>
-            <td colspan="2">BMI WEIGHT</td>
-            <td>Weight Status</td>           
-          </tr>
-          <tr>
-            <td colspan="2">
-              <ul class="list-inline">
-                <li>Below 18.5 </li>
-                <li>18.5 - 24.9 </li>
-                <li>25.0 - 29.9 </li>
-                <li>30.0 - and Above </li>
-              </ul>
-            </td>
-            <td>
-              <ul class="list-inline">
-                <li>Underweight</li>
-                <li>Healthy</li>
-                <li>Overweight</li>
-                <li>Obese</li>
-              </ul>
-            </td>
-          </tr>             
-          </tbody>
-        </table>    
-        <p class="lh-lg">* BMR Metabolic Rate / BMI Body Mass Index</p>
-        <!-- <h3 class="heading heading--brief fw-bold">What will be the next step?</h3>
-        <ul class="quote__q-list d-block">
-        <li>We'll prepare the proposal</li>
-        <li>we'll discuss it together</li>
-    </ul> -->
-      </div>
-    </div>
-    <div class="col-12 col-lg-6 bg-white shadow-lg p-4">
-        <div class="form w-100 pb-2">     
-            <h4 class="heading heading--topics pb-3">Calculate</h4>   
-              <form class="row g-3" action="#">
-              <div class="col-md-6">
-            <input type="text" required class="form-control form-control-lg shadow" 
-                id="inputFirstName" placeholder="Height/cm">
-              </div>
-            <div class="col-md-6">
-          <input type="text" required class="form-control form-control-lg shadow" 
-              id="inputLastName" placeholder="Weight/kg">
-            </div>
-            <div class="col-12">
-          <input type="email" required class="form-control form-control-lg shadow" 
-            id="colFormLabel" placeholder="Age">
-            </div> 
-          <input type="email" required class="form-control form-control-lg shadow" 
-            id="colFormLabel" placeholder="Sex">
-            </div> 
-                  <!-- start the message textarea -->
-      
-           <div class="col-6">
-            <div class="text-start">
-              <button class="btn btn-primary text-white" type="submit">
-                Calculate <i class="bi bi-plane" title="submit"></i>
-                  </button> 
-                </div>   
-                </div>
-              </form>      
-            </div> <!-- end form div -->
-          </div>
-        </div>
-    </section>
 
   <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
                          START THE FOOTER SECTION 
@@ -703,24 +702,25 @@ START THE 1ST COLUMN  COL-MD-7
         <div class="container">
             <div class="row">
                     <div class="col-sm-6 col-lg-4">
-                        <div class="contact btn btn-success d-flex pt-1">
+                        <div class="contact btn btn-outline-success d-flex pt-1">
                             <div class="icons">    
-                              <i class="bi bi-whatsapp"></i>   
+                              <i class="bi bi-whatsapp whatsapp"></i>   
                             </div>
                             <div class="info">          
-                              <a href="https://api.whatsapp.com/send?phone=+254728365413&text=Hi%20how%20are%20you?" class="title">Whatsapp +254 728 365413</a>
+                              <a href="https://api.whatsapp.com/send?phone=+254728365413&text=Hi%20how%20are%20you?" 
+                              class="title">Whatsapp +254 728 365413</a>
                               <p class="sub-title">Mon-sun 9am-6pm - EAT</p>
                             </div>
                         </div>
                     </div>
                   
                     <div class="col-sm-6 col-lg-4">
-                        <div class="contact btn btn-outline-primary d-flex pt-1">
+                        <div class="contact btn btn-outline-danger d-flex pt-1">
                             <div class="icons">  
-                            <i class="bi bi-envelope-check"></i>                     
+                            <i class="bi bi-envelope-check email"></i>                     
                             </div>
                             <div class="info">          
-                                <a href="#" class="title">info@fitness-shot.com</a>
+                                <a href="mailto:" class="title">info@fitness-shot.com</a>
                                 <p class="sub-title">Drop us an Email</p>
                             </div>
                         </div>
@@ -728,7 +728,7 @@ START THE 1ST COLUMN  COL-MD-7
                     <div class="col-sm-6 col-lg-4">
                         <div class="contact btn btn-outline-primary d-flex pt-1">
                             <div class="icons">  
-                            <i class="bi bi-pin-map"></i>                     
+                            <i class="bi bi-pin-map map"></i>                     
                             </div>
                             <div class="info">          
                                 <a href="#" class="title">Located in Westlands, Nairobi</a>
@@ -769,7 +769,8 @@ START THE 1ST COLUMN  COL-MD-7
           <!-- Content -->
           <h5 class="text-capitalize fw-bold">Fitness Shots</h5>
           <hr class="bg-white mb-4 d-inline-block mx-auto" style="width: 60px;">
-          <p class="text-start">Here you can use rows and columns to organize your footer content. Loremsit amet, consectetur adipisicing elit.</p>
+          <p class="text-start">Here you can write a brief describe about your company like what you, who you are and do or offer e.g(We are a fitness and nutrition center offering services to all races, ethnicity 
+            and religions.)</p>
         </div>
         <!-- Grid column -->
         <!-- Grid column -->
@@ -830,11 +831,14 @@ START THE 1ST COLUMN  COL-MD-7
             </div>
         </footer>
 
+        
+      
+
      <!-- ==========================================================
                         START SCRIPT SECTION   
     ============================================================-->
      <script src="public/js/counter.js" ></script>
-     <script src="public/js/modal.js" ></script>
+     <script src="public/js/main.js" ></script>
     <script src="public/js/popper.min.js"></script>
     <script src="public/js/bootstrap.min.js" ></script>
 
