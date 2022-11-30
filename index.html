@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Home Fitness Shot - Landing Page -  Bootstrap 5.2</title>
+    <title>Fitness Shot Landing Page -  Bootstrap 5.2</title>
     <meta name="keywords" content="fitness, fitness shot, gym, nutrition, fitness center, fitness template">
     <meta name="description" content="enter your description here">
     <link rel="stylesheet" href="public/css/style.css">
@@ -99,7 +99,7 @@
         <div class="row text-center">
           <div class="col-12">
            <div class="head-content">
-            <h1 class="display-3 fw-bold">What we do</h1>
+            <h1 class="display-3 fw-bold">What we Offer</h1>
            </div>
           </div>
         </div>
@@ -123,7 +123,7 @@
             ==============================-->
             <!-- <div class="tab-content mt-5" id="myTabContent"> -->
               <div class="mt-5 show active" id="group-fitness" role="tabpanel" aria-labelledby="home-tab">
-            <div class="row border text-muted">
+            <div class="row text-muted">
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     <i class="showcase-icon bi bi-people"aria-hidden="true"></i>
                     <div class="showcase-about">
@@ -144,16 +144,16 @@
                   </div>
                 </div>
                </div>          
-               
+               <div class="border-bottom mt-3"></div>
                 <!-- ============================
                   START ROW 2 OF SHOWCASE  
                 ==============================-->
    
             <div class="mt-5" id="personal-trainer" role="tabpanel" aria-labelledby="profile-tab">
-              <div class="row border mb-5 mt-4">
+              <div class="row mb-5 mt-4">
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     <div class="mw-100 showcase-wrapper">
-                        <img class="img-fluid" src="public/images/gym-bg-1.jpg"  alt="logo">                     
+                        <img class="img-fluid" src="public/images/fitnes-group.jpg"  alt="logo">                     
                      </div>  
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
@@ -172,12 +172,12 @@
                   </div>
                 </div>
                </div>
-            
+               <div class="border-bottom mt-3"></div>
                 <!-- ============================
                   START ROW 3 OF SHOWCASE  
                 ==============================-->
           <div class="mt-5 mb-5" id="cardio-program" role="tabpanel" aria-labelledby="cardio-tab">
-            <div class="row border mb-0 mt-0">
+            <div class="row mb-0 mt-0">
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     <i class="showcase-icon bi bi-prescription"aria-hidden="true"></i>
                     <div class="showcase-about">
@@ -201,7 +201,7 @@
               </div>
     </section>
 
-<section class="about-us">
+<section class="about-us" id="about">
   <div class="container">
     <div class="row">
       <div class="col-12 col-lg-6 col-md-6">
@@ -234,31 +234,27 @@
             </a> 
           </div>                          
       </div>
-      <div class="col-lg-3 col-md-6 col-sm-12 mt-5 bg-light p-3">
-       <h5> QUALITY EQUIPMENT</h5>
-       <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum natus tempora totam.
-       </p>
+      <div class="text-center row">
+        <div class="col-lg-4 col-md-6 col-sm-12 mt-5">   
+          <div class="card p-3" data-bs-toggle="popover" data-bs-placement="bottom"
+           title="Quality Equipment" data-bs-content="We pride ourselves as having the best Equipment.">
+           QUALITY EQUIPMENT
+          </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 mt-5"> 
+            <div class="card p-3" data-bs-toggle="popover" data-bs-placement="bottom"
+            title="Quality Equipment" data-bs-content="We pride ourselves as having the best Equipment.">
+             SHOWER SERVICE 
+            </div>       
+            </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 mt-5"> 
+            <div class="card p-3" data-bs-toggle="popover" data-bs-placement="bottom"
+            title="Quality Equipment" data-bs-content="We pride ourselves as having the best Equipment.">
+              UNIQUE TO YOUR NEEDS
+            </div>
+          </div>
       </div>
-      <div class="col-lg-3 col-md-6 col-sm-12 mt-5 bg-light p-3">
-        <h5>HEALTHY NUTRITION PLAN</h5>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum natus tempora totam.
-        </p>
-       </div>
-      <div class="col-lg-3 col-md-6 col-sm-12 mt-5 bg-light p-3"> 
-        <h5>SHOWER SERVICE </h5>   
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum natus tempora totam.
-        </p>       
-        </div>
-      <div class="col-lg-3 col-md-6 col-sm-12 mt-5 bg-light p-3"> 
-        <h5>UNIQUE TO YOUR NEEDS</h5>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum natus tempora totam.
-        </p>
-        </div>
-  </div>
+    </div>
   </div>
 </section>
 
@@ -310,22 +306,48 @@
             <h4 class="heading heading--topics pb-3">Calculate</h4>   
               <form class="row g-3" action="#">
               <div class="col-md-6">
-            <input type="text" required class="form-control form-control-lg shadow" 
-                id="inputFirstName" placeholder="Height/cm">
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Height/CM</option>
+                  <option value="3">5</option>
+                  <option value="3">6</option>
+                  <option value="3">7</option>
+                  <option value="3">8</option>
+                  <option value="3">9</option>
+                  <option value="3">10</option>
+                </select>
+                
               </div>
             <div class="col-md-6">
-          <input type="text" required class="form-control form-control-lg shadow" 
-              id="inputLastName" placeholder="Weight/kg">
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Weight/KG</option>
+                <option value="1">-10</option>
+                <option value="2">25</option>
+                <option value="3">35</option>
+                <option value="3">80+</option>
+              </select>
             </div>
             <div class="col-12">
-          <input type="email" required class="form-control form-control-lg shadow" 
-            id="colFormLabel" placeholder="Age">
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Age</option>
+                <option value="1">18 - 25yrs</option>
+                <option value="2">25 - 35yrs</option>
+                <option value="3">35 - 55yrs</option>
+                <option value="3">55 - 65yrs</option>
+                <option value="3">65 - 75yrs</option>
+                <option value="3">80+ yrs </option>
+              </select>
             </div> 
-          <input type="email" required class="form-control form-control-lg shadow" 
-            id="colFormLabel" placeholder="Sex">
-            </div> 
-                  <!-- start the message textarea -->
-      
+          <div class="col-12">
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Gender/SEX</option>
+              <option value="1">Male</option>
+              <option value="2">Female</option>
+              <option value="3">Transgender</option>
+              <option value="3">none</option>
+            </select>
+          </div>
+       
+                  <!-- start the message textarea -->    
            <div class="col-6">
             <div class="text-start">
               <button class="btn btn-primary text-white" type="submit">
@@ -343,7 +365,7 @@
                            START THE PRICING SECTION 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
                              
-    <section class="pricing-section" id="#pricing">
+    <section class="pricing-section" id="pricing">
       <div class="container">
         <div class="row text-center">
           <div class="col-12">
@@ -681,6 +703,20 @@ START THE 1ST COLUMN  COL-MD-7
                 <div class="accordion-body">
                   <p>
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis inventore quos aspernatur libero quisquam soluta officia reprehenderit, ducimus cumque laudantium, voluptates natus totam, iure quod expedita? Natus labore sint veniam nulla laboriosam?
+                  </p>
+              </div>
+            </div>
+          </div>
+            <div class="accordion-item shadow">
+              <h2 class="accordion-header" id="headingSix">
+                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                  Do you have shower services
+                </button>
+              </h2>
+              <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>
+                    Yes we do. ducimus cumque laudantium, voluptates natus totam, iure quod expedita? Natus labore sint veniam nulla laboriosam?
                   </p>
               </div>
             </div>
