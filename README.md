@@ -47,4 +47,4 @@ This free template is suitable for gym, fitness club, and yoga club websites.
 
 ## screeshot preview
 
-![Fullscreenshot](https://user-images.githubusercontent.com/11283502/116909562-0c139000-ac4d-11eb-8ae0-26b6d790981e.jpg) 
+![homepage-fitness-full](https://user-images.githubusercontent.com/11283502/205028019-62ac98a5-be7a-4f6e-9318-9067cb4d5293.jpg)
