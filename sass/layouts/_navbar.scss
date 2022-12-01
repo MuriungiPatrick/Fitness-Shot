@@ -1,0 +1,161 @@
+@use '../custom' as *;
+@use '../abstract/mixins' as *;
+
+.header {
+    height: 80vh;
+    position: relative;
+    background: linear-gradient(180deg, 
+    rgba($primary, .7) 100%, 
+    rgba($primary, .7) 100%, 
+    transparent 100%) , url(/public/images/fitness-gym.jpg);
+    background-size: cover;
+    background-position: center center;
+    padding: 6rem 1rem;
+  
+
+    @media (min-width: 992px) {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        background: linear-gradient(90deg, 
+        rgba($primary, .7) 0%, 
+        rgba($primary, .7) 60%, 
+        transparent 50%) , url(/public/images/fitness-gym.jpg);
+        background-size: cover;
+        background-position: center center;
+        padding-top: 10rem;
+        
+    }
+}
+
+.navbar-brand {
+    color: $primary;
+    
+    h1 {
+        color: $primary;
+    }
+}
+
+.navbar {
+    color: $primary;
+    background-color: $white;
+  
+
+        li {          
+            padding: 0 0.6rem;
+            color: $primary;    
+            
+                
+            a {
+                text-decoration: none;
+                transition:all .3s;
+                font-size: 1rem;
+                line-height: 1.2rem;
+                text-transform: capitalize;
+                animation: moveInBottom .5s ease-out .5s;
+                font-family: 'Oxygen', sans-serif; 
+                font-weight: 600;
+
+                &:link,
+                &:visited {
+                    color: $dark;
+                }
+
+                
+
+                &:hover,
+                &:active {
+                    color: $primary;
+                    transform: translateY(8px);
+                    transition:all .3s;       
+                    border-bottom: 2px solid rgba($primary, 0.8);           
+                   
+            }
+
+
+        }    
+  
+    } 
+
+    button {
+        top: 0;
+        margin-bottom: 10px;
+        border: 0;
+        
+    }
+
+    .line {
+    fill: none;
+    stroke: $primary;
+    stroke-width: 6;
+    transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+    stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .x1 {
+    stroke-dasharray: 60 207;
+    stroke-width: 6;
+    }
+    .x2 {
+    stroke-dasharray: 60 60;
+    stroke-width: 6;
+    }
+    .x3 {
+    stroke-dasharray: 60 207;
+    stroke-width: 6;
+    }
+    .opened .x1 {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+    stroke-width: 6;
+    }
+    .opened .x2 {
+    stroke-dasharray: 1 60;
+    stroke-dashoffset: -30;
+    stroke-width: 6;
+    }
+    .opened .x3 {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+    stroke-width: 6;
+    }
+                               
+}
+
+
+.menu-tabs {
+    // padding: 0;
+    margin: 0;
+    padding: 1rem 4rem;
+    // position: relative;
+    border: 0.1rem solid $gray-700;
+    position: sticky;
+
+    a {
+        color: $primary;
+        text-decoration: none;
+
+        &:hover  {
+            text-decoration: underline;
+        }
+
+    }
+
+    i {
+        color: $primary;
+        margin-right: 0.4rem;
+    }
+
+
+    ul, li {
+        display: inline-block;
+        padding-right:1rem;
+       
+
+    }
+
+}
+
+
+
+
+ 
