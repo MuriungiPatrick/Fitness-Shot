@@ -2,7 +2,7 @@
 
 ###### Release ```Nov-30, 2022.```
 
-fitness shot is clean, modern and responsive website template supremely crafted and developed for gym, fitness club, and yoga club websites.
+fitness shot is a clean, modern and responsive website template supremely crafted and developed for gym, fitness club, and yoga club websites.
 
 This free template is suitable for gym, fitness club, and yoga club websites.
  It’s built on the <strong>Bootstrap 5.2</strong> framework.
