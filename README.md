@@ -23,7 +23,7 @@ This free template is suitable for gym, fitness club, and yoga club websites.
 - Onepage Landing page design
 - Parallax sections
 - Testimonials with carousel
-- Accordion with plus icon
+- Accordion with plus ico
 - Call to action button
 - Bootstrap icons
 - Google fonts
@@ -44,6 +44,24 @@ This free template is suitable for gym, fitness club, and yoga club websites.
 - Jquery
 - Google Fonts(poppins)
 - BMI calculator 
+
+
+### License
+
+You are granted a license to use Ze-University template. that means I (Patrick Muriungi ) am Granting you the license to use the free template for your personal & commercial purposes.
+
+You can use this template to make a website for your clients and get paid. but Do NOT claim it as your own design. This license does not include the right to compile templates from codewithpatrick.com to replicate a similar or competing service and to use the themes in derivative themes or “generators.
+
+#### Buy me coffee
+
+Better still feel free to buy me a coffee ($10) if you’d like to show your appreciation for the hard work. Although any amount you feel like contributing is, of course, highly appreciated! 
+[Buy me Coffee](https://www.buymeacoffee.com/muriungipatrick)
+
+#### Attribution Link
+You're free to keep or remove the attribution link (Created By Patrick Muriungi) in the footer.
+
+#### Note
+If you find this template useful and you'd like to extend the template like customizing and adding more pages to the template for your specific needs, am here and I can customize the template for $25 only.
 
 ## screeshot preview
 

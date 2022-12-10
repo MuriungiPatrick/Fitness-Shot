@@ -4,7 +4,7 @@
   "description": "Fitness shot is a free template appropriate for Fitness and gyme websites",
   "main": "index.js",
   "scripts": {
-    "compile": "sass --watch sass:public/css"
+    "compile": "sass --watch scss:public/css"
   },
   "keywords": [
     "Patrick-muriungi",
