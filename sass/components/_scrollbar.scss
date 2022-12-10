@@ -1,0 +1,32 @@
+/**----------------------------------------------------------
+               SCROLLBAR STYLES 
+--------------------------------------------------------------
+**/
+
+::-webkit-scrollbar{
+    width: 8px;
+    height: 8px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    cursor: pointer;
+    background: $primary;
+  }
+  
+  ::selection{
+    background-color:$primary;
+    color:$color-white;
+  }
+  
+  -webkit-::selection{
+      background-color:$primary;
+      color:$color-white;
+  }
+  
+  ::-moz-selection{
+      background-color:$primary;
+      color:$color-white;
+  }
+  
+  
+  
